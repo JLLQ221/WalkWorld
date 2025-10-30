@@ -1,0 +1,38 @@
+# Unity folders to ignore
+[Línea base para Unity]
+[Línea base para Windows]
+[Línea base para Visual Studio]
+
+# Ignore build and temp files
+Build/
+Temp/
+Library/
+Logs/
+Obj/
+UserSettings/
+MemoryCaptures/
+
+# Ignore VS and Rider files
+.vs/
+*.csproj
+*.sln
+*.user
+*.unityproj
+*.pidb
+*.suo
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.ide
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Allow essential folders
+!Assets/
+!Packages/
+!ProjectSettings/
+!UserSettings/

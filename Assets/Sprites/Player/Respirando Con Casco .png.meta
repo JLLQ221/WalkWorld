@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 9e70240da3f849343a6f8997530d8afb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5521525233825025570
+    second: Respirando Con Casco _0
+  - first:
+      213: -8722954153256082680
+    second: Respirando Con Casco _1
+  - first:
+      213: -6960406316754718990
+    second: Respirando Con Casco _2
+  - first:
+      213: -6726302524376333546
+    second: Respirando Con Casco _3
+  - first:
+      213: 4382783696493080979
+    second: Respirando Con Casco _4
+  - first:
+      213: -2884023839868644422
+    second: Respirando Con Casco _5
+  - first:
+      213: 3871264677653281967
+    second: Respirando Con Casco _6
+  - first:
+      213: -5980470795646064588
+    second: Respirando Con Casco _7
+  - first:
+      213: 6950604210831749305
+    second: Respirando Con Casco _8
+  - first:
+      213: -7729937481646848744
+    second: Respirando Con Casco _9
+  - first:
+      213: 9120646543472346889
+    second: Respirando Con Casco _10
+  - first:
+      213: 5463725098881444876
+    second: Respirando Con Casco _11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Respirando Con Casco _0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 28
+        width: 33
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5340418, y: 0.51168966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e0f7422f560ac40800000000000000
+      internalID: 5521525233825025570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3
+        width: 33
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5661235, y: 0.52710646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803272fe967d1f680800000000000000
+      internalID: -8722954153256082680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 28
+        width: 33
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5672374, y: 0.51168966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe237d255ba76f90800000000000000
+      internalID: -6960406316754718990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 3
+        width: 33
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5944621, y: 0.52710646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6134cb6dd7f57a2a0800000000000000
+      internalID: -6726302524376333546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _4
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 28
+        width: 33
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5672374, y: 0.5116898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391f7dc0d86c2dc30800000000000000
+      internalID: 4382783696493080979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 3
+        width: 33
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5944621, y: 0.5271065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab31fdc0993e9f7d0800000000000000
+      internalID: -2884023839868644422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _6
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 28
+        width: 33
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5672374, y: 0.5116898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac7a07a6be79b530800000000000000
+      internalID: 3871264677653281967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _7
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 3
+        width: 33
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5944621, y: 0.5271065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4382beb4f79110da0800000000000000
+      internalID: -5980470795646064588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _8
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 28
+        width: 33
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5672374, y: 0.5116898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0f5f034b1857060800000000000000
+      internalID: 6950604210831749305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _9
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 3
+        width: 33
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5944621, y: 0.5271065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815467eb0deb9b490800000000000000
+      internalID: -7729937481646848744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 28
+        width: 33
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5672374, y: 0.5116898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907409145bb039e70800000000000000
+      internalID: 9120646543472346889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respirando Con Casco _11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 3
+        width: 33
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5944621, y: 0.5271065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ce635870d03db40800000000000000
+      internalID: 5463725098881444876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cf3e4d44de1068047a45f396fb84b399
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Respirando Con Casco _0: 5521525233825025570
+      Respirando Con Casco _1: -8722954153256082680
+      Respirando Con Casco _10: 9120646543472346889
+      Respirando Con Casco _11: 5463725098881444876
+      Respirando Con Casco _2: -6960406316754718990
+      Respirando Con Casco _3: -6726302524376333546
+      Respirando Con Casco _4: 4382783696493080979
+      Respirando Con Casco _5: -2884023839868644422
+      Respirando Con Casco _6: 3871264677653281967
+      Respirando Con Casco _7: -5980470795646064588
+      Respirando Con Casco _8: 6950604210831749305
+      Respirando Con Casco _9: -7729937481646848744
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

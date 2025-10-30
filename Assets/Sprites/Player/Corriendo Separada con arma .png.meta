@@ -1,0 +1,549 @@
+fileFormatVersion: 2
+guid: 24c0653aef1007d43974f660dc9b7433
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1571339331702375358
+    second: Corriendo Separada con arma _0
+  - first:
+      213: 4150219386310419384
+    second: Corriendo Separada con arma _1
+  - first:
+      213: 1266008590919888680
+    second: Corriendo Separada con arma _2
+  - first:
+      213: 326213436551145040
+    second: Corriendo Separada con arma _3
+  - first:
+      213: 224827197963911373
+    second: Corriendo Separada con arma _4
+  - first:
+      213: 6743633698523088832
+    second: Corriendo Separada con arma _5
+  - first:
+      213: -5503975501988710059
+    second: Corriendo Separada con arma _6
+  - first:
+      213: 4972345853081955696
+    second: Corriendo Separada con arma _7
+  - first:
+      213: -5239194455377102030
+    second: Corriendo Separada con arma _8
+  - first:
+      213: 8562833152255751402
+    second: Corriendo Separada con arma _9
+  - first:
+      213: -48624712147483687
+    second: Corriendo Separada con arma _10
+  - first:
+      213: -8835804116148002940
+    second: Corriendo Separada con arma _11
+  - first:
+      213: -1389113209775690456
+    second: Corriendo Separada con arma _12
+  - first:
+      213: 2705499376143192505
+    second: Corriendo Separada con arma _13
+  - first:
+      213: -6846590796920875848
+    second: Corriendo Separada con arma _14
+  - first:
+      213: -3595613243855024679
+    second: Corriendo Separada con arma _15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 24
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb348bffbc48ec510800000000000000
+      internalID: 1571339331702375358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 24
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.5506168}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3e8f40b8a889930800000000000000
+      internalID: 4150219386310419384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 24
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5485636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f6f581b14c19110800000000000000
+      internalID: 1266008590919888680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 24
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.5312332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05627966461f68400800000000000000
+      internalID: 326213436551145040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 24
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.4701599}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc04c76352fbe1300800000000000000
+      internalID: 224827197963911373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _5
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 24
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.527}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c782d79e13369d50800000000000000
+      internalID: 6743633698523088832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _6
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 24
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55788875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559b2873173fd93b0800000000000000
+      internalID: -5503975501988710059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _7
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 24
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.58104455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d26517532510540800000000000000
+      internalID: 4972345853081955696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b3d0ab664aa47b0800000000000000
+      internalID: -5239194455377102030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae47427526b45d670800000000000000
+      internalID: 8562833152255751402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 0
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3c429f410435ff0800000000000000
+      internalID: -48624712147483687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _11
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f501078fae06580800000000000000
+      internalID: -8835804116148002940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _12
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 33
+        height: 23
+      alignment: 9
+      pivot: {x: 0.47403833, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d648245e0e8bce0800000000000000
+      internalID: -1389113209775690456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _13
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b15e07295ddb8520800000000000000
+      internalID: 2705499376143192505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4921be1f50cf0a0800000000000000
+      internalID: -6846590796920875848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma _15
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddc45a1ec0d91ec0800000000000000
+      internalID: -3595613243855024679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e188cdbc50e698647a238067831430c5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Corriendo Separada con arma _0: 1571339331702375358
+      Corriendo Separada con arma _1: 4150219386310419384
+      Corriendo Separada con arma _10: -48624712147483687
+      Corriendo Separada con arma _11: -8835804116148002940
+      Corriendo Separada con arma _12: -1389113209775690456
+      Corriendo Separada con arma _13: 2705499376143192505
+      Corriendo Separada con arma _14: -6846590796920875848
+      Corriendo Separada con arma _15: -3595613243855024679
+      Corriendo Separada con arma _16: -1143809882
+      Corriendo Separada con arma _2: 1266008590919888680
+      Corriendo Separada con arma _3: 326213436551145040
+      Corriendo Separada con arma _4: 224827197963911373
+      Corriendo Separada con arma _5: 6743633698523088832
+      Corriendo Separada con arma _6: -5503975501988710059
+      Corriendo Separada con arma _7: 4972345853081955696
+      Corriendo Separada con arma _8: -5239194455377102030
+      Corriendo Separada con arma _9: 8562833152255751402
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
