@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -9,12 +8,15 @@ public class ObjectRecolect : MonoBehaviour
     [SerializeField, TextArea(4, 6)] public string[] dialogueLines;
 
     public GameObject dialoguePanel;
+    public GameObject playerUI;
+    public SpriteRenderer spriteSecondary;
     public TextMeshProUGUI textKetInteract;
     public TextMeshProUGUI dialogueTextPanel;
     private InputAction m_interaction;
 
     private bool isColliderPlayer = false;
     private bool didDialogueStart;
+    private bool isInteractive = true;
     private int lineIndex;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,7 +29,7 @@ public class ObjectRecolect : MonoBehaviour
     {
         bool usingGamepad = FindFirstObjectByType<Input>().usingGamepad;
 
-        if (isColliderPlayer)
+        if (isColliderPlayer && isInteractive)
         {
             if (usingGamepad)
             {
@@ -96,19 +98,27 @@ public class ObjectRecolect : MonoBehaviour
             Destroy(gameObject);
             Player player = FindFirstObjectByType<Player>();
             player.moving = true;
+            playerUI.SetActive(true);
         }
     }
 
     public void StartDialogue()
     {
+        playerUI.SetActive(false);
         textKetInteract.enabled = false;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        spriteSecondary.enabled = false;
         Player player = FindFirstObjectByType<Player>();
         player.moving = false;
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
         lineIndex = 0;
         StartCoroutine(ShowLine());
+    }
+
+    public void EnableInteractive(bool enable )
+    {
+        isInteractive = enable;
     }
 
     public void SetTextInteractive(string text)

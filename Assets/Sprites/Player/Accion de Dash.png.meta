@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 01e50a27afc975a4cb32b614b046908f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4326345940856407088
+    second: Accion de Dash_0
+  - first:
+      213: 6214203620684261347
+    second: Accion de Dash_1
+  - first:
+      213: 1870992949469527292
+    second: Accion de Dash_2
+  - first:
+      213: -7661890364666150579
+    second: Accion de Dash_3
+  - first:
+      213: -3617760152010100069
+    second: Accion de Dash_4
+  - first:
+      213: 4271957610363665188
+    second: Accion de Dash_5
+  - first:
+      213: 2066035148306805160
+    second: Accion de Dash_6
+  - first:
+      213: -2759528751174038386
+    second: Accion de Dash_7
+  - first:
+      213: -7774757284664322267
+    second: Accion de Dash_8
+  - first:
+      213: -5811228105741234262
+    second: Accion de Dash_9
+  - first:
+      213: 7722320401007286306
+    second: Accion de Dash_10
+  - first:
+      213: 1506827222739408121
+    second: Accion de Dash_11
+  - first:
+      213: -8931695528052344755
+    second: Accion de Dash_12
+  - first:
+      213: 3138984752999017827
+    second: Accion de Dash_13
+  - first:
+      213: -3576608850904852006
+    second: Accion de Dash_14
+  - first:
+      213: -4716838377774862094
+    second: Accion de Dash_15
+  - first:
+      213: -23341923999364050
+    second: Accion de Dash_16
+  - first:
+      213: -8786991682840693376
+    second: Accion de Dash_17
+  - first:
+      213: 2824574978466945782
+    second: Accion de Dash_18
+  - first:
+      213: 5683242477870297970
+    second: Accion de Dash_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Accion de Dash_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dbfccbe94bb5f3c0800000000000000
+      internalID: -4326345940856407088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 3
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7e4dcc4494d3650800000000000000
+      internalID: 6214203620684261347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 3
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc3462bc2a17f910800000000000000
+      internalID: 1870992949469527292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 40
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41061ace4f7ba590800000000000000
+      internalID: -7661890364666150579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 47
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92ffd83f422bcdc0800000000000000
+      internalID: -3617760152010100069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_5
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 28
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42bb04510da094b30800000000000000
+      internalID: 4271957610363665188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 39
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a17c4465080cac10800000000000000
+      internalID: 2066035148306805160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 42
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c4bcea83f24b9d0800000000000000
+      internalID: -2759528751174038386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_8
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 30
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527d3b821738a1490800000000000000
+      internalID: -7774757284664322267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 42
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf0788b3de5a5fa0800000000000000
+      internalID: -5811228105741234262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 6
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2289ac77d713b2b60800000000000000
+      internalID: 7722320401007286306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_11
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 4
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f45545206359e410800000000000000
+      internalID: 1506827222739408121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 3
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48be784d3e3c0480800000000000000
+      internalID: -8931695528052344755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_13
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dafd5700aef8b20800000000000000
+      internalID: 3138984752999017827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_14
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 28
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad95c4523355d5ec0800000000000000
+      internalID: -3576608850904852006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_15
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 19
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0bccd7c7c6a8eb0800000000000000
+      internalID: -4716838377774862094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_16
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 25
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cc4afc4a21daff0800000000000000
+      internalID: -23341923999364050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_17
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 16
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085f7f3be955e0680800000000000000
+      internalID: -8786991682840693376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_18
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 4
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa9af84af7e23720800000000000000
+      internalID: 2824574978466945782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion de Dash_19
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 6
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273bed92ceeeede40800000000000000
+      internalID: 5683242477870297970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Accion de Dash_0: -4326345940856407088
+      Accion de Dash_1: 6214203620684261347
+      Accion de Dash_10: 7722320401007286306
+      Accion de Dash_11: 1506827222739408121
+      Accion de Dash_12: -8931695528052344755
+      Accion de Dash_13: 3138984752999017827
+      Accion de Dash_14: -3576608850904852006
+      Accion de Dash_15: -4716838377774862094
+      Accion de Dash_16: -23341923999364050
+      Accion de Dash_17: -8786991682840693376
+      Accion de Dash_18: 2824574978466945782
+      Accion de Dash_19: 5683242477870297970
+      Accion de Dash_2: 1870992949469527292
+      Accion de Dash_3: -7661890364666150579
+      Accion de Dash_4: -3617760152010100069
+      Accion de Dash_5: 4271957610363665188
+      Accion de Dash_6: 2066035148306805160
+      Accion de Dash_7: -2759528751174038386
+      Accion de Dash_8: -7774757284664322267
+      Accion de Dash_9: -5811228105741234262
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

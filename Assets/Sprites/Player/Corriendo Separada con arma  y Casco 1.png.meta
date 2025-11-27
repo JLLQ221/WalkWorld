@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 73711e7aef03e5c479b1f062eeb4bd47
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3898376492864043941
+    second: Corriendo Separada con arma  y Casco 1_0
+  - first:
+      213: 2282924868261436174
+    second: Corriendo Separada con arma  y Casco 1_1
+  - first:
+      213: 6663933453458365076
+    second: Corriendo Separada con arma  y Casco 1_2
+  - first:
+      213: -553331289708718895
+    second: Corriendo Separada con arma  y Casco 1_3
+  - first:
+      213: -1679532426293748735
+    second: Corriendo Separada con arma  y Casco 1_4
+  - first:
+      213: -1666735118426673085
+    second: Corriendo Separada con arma  y Casco 1_5
+  - first:
+      213: 7124286104287642563
+    second: Corriendo Separada con arma  y Casco 1_6
+  - first:
+      213: 8676014163201593400
+    second: Corriendo Separada con arma  y Casco 1_7
+  - first:
+      213: -6910210415615359566
+    second: Corriendo Separada con arma  y Casco 1_8
+  - first:
+      213: 975591442093103329
+    second: Corriendo Separada con arma  y Casco 1_9
+  - first:
+      213: -8291863063432818179
+    second: Corriendo Separada con arma  y Casco 1_10
+  - first:
+      213: -4343136438728219554
+    second: Corriendo Separada con arma  y Casco 1_11
+  - first:
+      213: -148358163641244516
+    second: Corriendo Separada con arma  y Casco 1_12
+  - first:
+      213: 4519740710989693231
+    second: Corriendo Separada con arma  y Casco 1_13
+  - first:
+      213: 3818220251043387029
+    second: Corriendo Separada con arma  y Casco 1_14
+  - first:
+      213: 727496102884471777
+    second: Corriendo Separada con arma  y Casco 1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4752743, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abf4e904c0d91630800000000000000
+      internalID: 3898376492864043941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 28
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4752743, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0bd0ad72149eaf10800000000000000
+      internalID: 2282924868261436174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 28
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4752743, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a5a3c3b2c0b7c50800000000000000
+      internalID: 6663933453458365076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 28
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4752743, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d49dc9af1c2258f0800000000000000
+      internalID: -553331289708718895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 28
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4752743, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10cd206282a11b8e0800000000000000
+      internalID: -1679532426293748735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 28
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4752743, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34072839d319ed8e0800000000000000
+      internalID: -1666735118426673085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 28
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4752743, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3015c377c8ed260800000000000000
+      internalID: 7124286104287642563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_7
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 28
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4752743, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83093e7f9e4676870800000000000000
+      internalID: 8676014163201593400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 0.51, y: 0.4084091}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a95b774aa2717f45980f3f612d7c1aa
+      internalID: -2077612851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_9
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 4
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4937057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda56685b7883c241a584840b8be3159
+      internalID: -343521975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_10
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 4
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 0.49, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dc8b4a881aee247a74cc9f5a752495
+      internalID: 1239446801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 4
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 0.49, y: 0.5339985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a654e57646c5a64586176a23c714da1
+      internalID: 634846314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 4
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 0.51, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d4fa2be3f46444895e514547cc074c
+      internalID: -1173248042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 4
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 0.51, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3126f7023db42f542b3c30c5fec931f7
+      internalID: 721200449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 4
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff10247b2fb21548926be659862df36
+      internalID: -1536750387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corriendo Separada con arma  y Casco 1_15
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 4
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 0.49, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a01cb46be14a2741898c326207709f6
+      internalID: -1713811941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 24a3f5db5fbf4054f9518f5fd7ea1902
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":44.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Corriendo Separada con arma  y Casco 1_0: 3898376492864043941
+      Corriendo Separada con arma  y Casco 1_1: 2282924868261436174
+      Corriendo Separada con arma  y Casco 1_10: 1239446801
+      Corriendo Separada con arma  y Casco 1_11: 634846314
+      Corriendo Separada con arma  y Casco 1_12: -1173248042
+      Corriendo Separada con arma  y Casco 1_13: 721200449
+      Corriendo Separada con arma  y Casco 1_14: -1536750387
+      Corriendo Separada con arma  y Casco 1_15: -1713811941
+      Corriendo Separada con arma  y Casco 1_2: 6663933453458365076
+      Corriendo Separada con arma  y Casco 1_3: -553331289708718895
+      Corriendo Separada con arma  y Casco 1_4: -1679532426293748735
+      Corriendo Separada con arma  y Casco 1_5: -1666735118426673085
+      Corriendo Separada con arma  y Casco 1_6: 7124286104287642563
+      Corriendo Separada con arma  y Casco 1_7: 8676014163201593400
+      Corriendo Separada con arma  y Casco 1_8: -2077612851
+      Corriendo Separada con arma  y Casco 1_9: -343521975
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

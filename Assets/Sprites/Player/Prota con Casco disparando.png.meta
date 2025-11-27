@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: 020efe5231a522245b4e0682206c8921
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2566684597587426176
+    second: Prota con Casco disparando_0
+  - first:
+      213: -1589445126333064158
+    second: Prota con Casco disparando_1
+  - first:
+      213: -6384495606547769353
+    second: Prota con Casco disparando_2
+  - first:
+      213: -9041939385347241276
+    second: Prota con Casco disparando_3
+  - first:
+      213: 8427891919350629874
+    second: Prota con Casco disparando_4
+  - first:
+      213: 4495634119469179233
+    second: Prota con Casco disparando_5
+  - first:
+      213: -2093832795568887234
+    second: Prota con Casco disparando_6
+  - first:
+      213: 8432711301777807782
+    second: Prota con Casco disparando_7
+  - first:
+      213: 8437420939948171102
+    second: Prota con Casco disparando_8
+  - first:
+      213: 2219513213465377303
+    second: Prota con Casco disparando_9
+  - first:
+      213: 947076017512256707
+    second: Prota con Casco disparando_10
+  - first:
+      213: -9214539338701755850
+    second: Prota con Casco disparando_11
+  - first:
+      213: 3124787731661615471
+    second: Prota con Casco disparando_12
+  - first:
+      213: -7024819776450150624
+    second: Prota con Casco disparando_13
+  - first:
+      213: 1200158273721269091
+    second: Prota con Casco disparando_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Prota con Casco disparando_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b3aa9ea02be9320800000000000000
+      internalID: 2566684597587426176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c11fe241821f9e0800000000000000
+      internalID: -1589445126333064158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f79da58217b567a0800000000000000
+      internalID: -6384495606547769353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca83c70904948280800000000000000
+      internalID: -9041939385347241276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5874a3c03e5f470800000000000000
+      internalID: 8427891919350629874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161261ba963b36e30800000000000000
+      internalID: 4495634119469179233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3aad018a2631f2e0800000000000000
+      internalID: -2093832795568887234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_7
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a953e32042070570800000000000000
+      internalID: 8432711301777807782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f9d0a34adb71570800000000000000
+      internalID: 8437420939948171102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_9
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ab3e6128b4dce10800000000000000
+      internalID: 2219513213465377303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_10
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c41c1fbe90b42d00800000000000000
+      internalID: 947076017512256707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63aa1dbca416f1080800000000000000
+      internalID: -9214539338701755850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_12
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f617038d2e97d5b20800000000000000
+      internalID: 3124787731661615471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_13
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fbc85e1a3d28e90800000000000000
+      internalID: -7024819776450150624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota con Casco disparando_14
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 21
+        width: 44
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36bf66b5791d7a010800000000000000
+      internalID: 1200158273721269091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5faa981290746ff44a3ab9a08a929da3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":44.0,"y":41.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Prota con Casco disparando_0: 2566684597587426176
+      Prota con Casco disparando_1: -1589445126333064158
+      Prota con Casco disparando_10: 947076017512256707
+      Prota con Casco disparando_11: -9214539338701755850
+      Prota con Casco disparando_12: 3124787731661615471
+      Prota con Casco disparando_13: -7024819776450150624
+      Prota con Casco disparando_14: 1200158273721269091
+      Prota con Casco disparando_2: -6384495606547769353
+      Prota con Casco disparando_3: -9041939385347241276
+      Prota con Casco disparando_4: 8427891919350629874
+      Prota con Casco disparando_5: 4495634119469179233
+      Prota con Casco disparando_6: -2093832795568887234
+      Prota con Casco disparando_7: 8432711301777807782
+      Prota con Casco disparando_8: 8437420939948171102
+      Prota con Casco disparando_9: 2219513213465377303
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

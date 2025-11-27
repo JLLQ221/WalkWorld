@@ -15,7 +15,7 @@ TagManager:
   - Player
   - Enemy
   - Object
-  - 
+  - Attack
   - 
   - 
   - 
@@ -48,11 +48,14 @@ TagManager:
   - name: Floor
     uniqueID: 1020269713
     locked: 0
-  - name: Player
-    uniqueID: 1165336255
-    locked: 0
   - name: Enemy
     uniqueID: 2239867837
+    locked: 0
+  - name: EnemyAttack
+    uniqueID: 3367592953
+    locked: 0
+  - name: Player
+    uniqueID: 1165336255
     locked: 0
   - name: Object
     uniqueID: 1442617317

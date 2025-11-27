@@ -5,20 +5,31 @@ public class Paradax : MonoBehaviour
     [SerializeField] private Vector2 speedMove;
 
     private Vector2 offset;
-
     private Material material;
+    private Rigidbody2D playerR;
+    private BasicActor playerActor;
 
-    private Rigidbody2D player;
+    private Vector2 lastPlayerPosition;
 
     private void Awake()
     {
         material = GetComponent<SpriteRenderer>().material;
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+        playerActor = GameObject.FindGameObjectWithTag("Player").GetComponent<BasicActor>();
+        playerR = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+        lastPlayerPosition = playerR.position;
     }
 
     private void Update()
     {
-        offset = (player.linearVelocityX * 0.1f) * speedMove * Time.deltaTime;
-        material.mainTextureOffset += offset; 
+        Vector2 currentPosition = playerR.position;
+        Vector2 deltaPosition = currentPosition - lastPlayerPosition;
+
+        if (!playerActor.GetFreeMovie())
+        {
+            offset = (deltaPosition * 11.8f) * speedMove * Time.deltaTime;
+            material.mainTextureOffset += offset;
+        }
+
+        lastPlayerPosition = currentPosition;
     }
 }

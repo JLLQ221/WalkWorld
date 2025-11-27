@@ -1,29 +1,39 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Input : MonoBehaviour
 {
     public bool usingGamepad = false;
+    private Gamepad gamepad;
+
     void Update()
     {
         // Detectar si el último dispositivo usado fue un mando
         if (Gamepad.current != null && Gamepad.current.wasUpdatedThisFrame)
         {
-            if (!usingGamepad)
-            {
-                Debug.Log("Cambiado a Mando");
-                usingGamepad = true;
-            }
+            gamepad = Gamepad.current;
+            usingGamepad = true;
         }
-        // Detectar si fue el teclado
         else if (Keyboard.current != null && Keyboard.current.wasUpdatedThisFrame)
         {
-            if (usingGamepad)
-            {
-                Debug.Log("Cambiado a Teclado");
-                usingGamepad = false;
-            }
+            usingGamepad = false;
+            gamepad = null;
         }
+    }
+
+    public void VibrationController(float intensity, float time)
+    {
+        if (gamepad != null)
+        {
+            // Activa vibración: lowFrequency, highFrequency
+            gamepad.SetMotorSpeeds(intensity, intensity);
+
+            // Detiene la vibración después de 0.5 segundos
+            Invoke(nameof(StopVibration), time);
+        }
+    }
+    public void StopVibration()
+    {
+        gamepad.SetMotorSpeeds(0f, 0f);
     }
 }
