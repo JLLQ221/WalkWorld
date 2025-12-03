@@ -181,9 +181,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBasic
   materialWhite: {fileID: -876546973899608171, guid: e1b890317e4d3e248b38b916f9f8f318, type: 3}
   objectGuard: {fileID: 0}
-  life: 20
+  prefabPoints: {fileID: 3167853989006994935, guid: e9ac6f50792faf44eb7414287782d964, type: 3}
+  life: 8
   stepsRight: 1
+  pointsHave: 2
   stepsLeft: 0.6
+  dead: 0
   player: {fileID: 0}
   bulletPrefat: {fileID: 5217700841148311255, guid: e20ed9c49c01d024d82a6353e734f0a5, type: 3}
 --- !u!95 &4383046418738407361

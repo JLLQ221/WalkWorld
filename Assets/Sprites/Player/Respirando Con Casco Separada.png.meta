@@ -155,7 +155,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_1
+      name: Respirando Con Casco Separada_6
       rect:
         serializedVersion: 2
         x: 0
@@ -177,7 +177,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_2
+      name: Respirando Con Casco Separada_1
       rect:
         serializedVersion: 2
         x: 44
@@ -199,7 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_3
+      name: Respirando Con Casco Separada_7
       rect:
         serializedVersion: 2
         x: 44
@@ -221,7 +221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_4
+      name: Respirando Con Casco Separada_2
       rect:
         serializedVersion: 2
         x: 88
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_5
+      name: Respirando Con Casco Separada_8
       rect:
         serializedVersion: 2
         x: 88
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_6
+      name: Respirando Con Casco Separada_3
       rect:
         serializedVersion: 2
         x: 132
@@ -287,7 +287,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_7
+      name: Respirando Con Casco Separada_9
       rect:
         serializedVersion: 2
         x: 132
@@ -309,7 +309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_8
+      name: Respirando Con Casco Separada_4
       rect:
         serializedVersion: 2
         x: 176
@@ -331,7 +331,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_9
+      name: Respirando Con Casco Separada_10
       rect:
         serializedVersion: 2
         x: 176
@@ -353,7 +353,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Respirando Con Casco Separada_10
+      name: Respirando Con Casco Separada_5
       rect:
         serializedVersion: 2
         x: 220
@@ -411,17 +411,17 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Respirando Con Casco Separada_0: 5934006053947449889
-      Respirando Con Casco Separada_1: 6014951253290142394
-      Respirando Con Casco Separada_10: -6402570475477892497
+      Respirando Con Casco Separada_1: 7242261033280462869
+      Respirando Con Casco Separada_10: -5525404872109522016
       Respirando Con Casco Separada_11: 5591823493343136076
-      Respirando Con Casco Separada_2: 7242261033280462869
-      Respirando Con Casco Separada_3: 8527050806232208504
-      Respirando Con Casco Separada_4: 6191645146813853533
-      Respirando Con Casco Separada_5: 3116312366109963184
-      Respirando Con Casco Separada_6: -2253634585667653638
-      Respirando Con Casco Separada_7: -5309256007750442328
-      Respirando Con Casco Separada_8: -1751827639392837727
-      Respirando Con Casco Separada_9: -5525404872109522016
+      Respirando Con Casco Separada_2: 6191645146813853533
+      Respirando Con Casco Separada_3: -2253634585667653638
+      Respirando Con Casco Separada_4: -1751827639392837727
+      Respirando Con Casco Separada_5: -6402570475477892497
+      Respirando Con Casco Separada_6: 6014951253290142394
+      Respirando Con Casco Separada_7: 8527050806232208504
+      Respirando Con Casco Separada_8: 3116312366109963184
+      Respirando Con Casco Separada_9: -5309256007750442328
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

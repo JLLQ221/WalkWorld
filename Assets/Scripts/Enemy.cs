@@ -5,6 +5,7 @@ public class Enemy : BasicActor
     public Material materialWhite;
     private Material materialOrigin;
     public ObjectRecolect objectGuard = null;
+    public TextPoints prefabPoints;
 
     protected Rigidbody2D rgb2D;
     protected Animator animationEnemy;
@@ -13,10 +14,12 @@ public class Enemy : BasicActor
     protected int directionWatch = 0;
     public int life;
     public float stepsRight;
+    public int pointsHave;
     public float stepsLeft;
     private bool wacthFree = false;
     protected float speed;
     private float xInitial;
+    public bool dead = false;
     protected float scaleX;
 
     private SpriteRenderer spriteRenderer;
@@ -39,10 +42,33 @@ public class Enemy : BasicActor
         if (objectGuard != null) objectGuard.EnableInteractive(false);
         stepsRight = xInitial + stepsRight;
         stepsLeft = xInitial - stepsLeft;
+        if (dead) Dead();
+    }
+
+    public void CreateText()
+    {
+        GameObject canvasUI = GameObject.Find("CanvaUI");
+        GameObject uiPlayer = canvasUI.transform.Find("UIPlayer").gameObject;
+
+        Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
+
+        Vector2 uiPos;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            canvasUI.transform as RectTransform,
+            screenPos,
+            null, // Overlay
+            out uiPos
+        );
+
+        TextPoints instance = Instantiate(prefabPoints, uiPlayer.transform);
+        instance.transform.SetAsFirstSibling(); // asegura que quede atrás
+        instance.SetText(pointsHave);
+        instance.GetComponent<RectTransform>().anchoredPosition = uiPos;
     }
 
     public void Dead()
     {
+        CreateText();
         if (objectGuard != null) objectGuard.EnableInteractive(true);
         StopAllCoroutines();
         Destroy(gameObject);

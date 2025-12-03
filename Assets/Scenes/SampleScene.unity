@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 16472901}
   - component: {fileID: 16472903}
   - component: {fileID: 16472904}
+  - component: {fileID: 16472905}
   m_Layer: 5
   m_Name: CardPz
   m_TagString: Untagged
@@ -144,7 +145,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16472900}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -155,8 +156,8 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 300, y: 0}
-  m_SizeDelta: {x: 300, y: 100}
-  m_Pivot: {x: 1, y: 1}
+  m_SizeDelta: {x: 280, y: 80}
+  m_Pivot: {x: 0.99, y: 0.99}
 --- !u!222 &16472903
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -180,6 +181,36 @@ MonoBehaviour:
   pzText: {fileID: 485179784}
   amplitude: 5
   frequency: 2
+--- !u!114 &16472905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16472900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.22264141, g: 0.22264141, b: 0.22264141, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &83009542
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,19 +565,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681b1ca1afac96048aa76e4f38c6dbe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectRecolect
-  dialogueLines:
-  - "He conseguido una semilla, se ve muy peculiar. Parece que se modific\xF3 para
-    un crecimiento r\xE1pido."
-  - Si tan solo tuviera un poco de agua pudiera ver el como creece.
-  - .....
-  - "Me pregunto el por qu\xE9 la quer\xEDa el robot."
-  - "Bueno me la llevar\xE9 y espero pronto encontrar un lugar en donde plantarla,
-    a lo mejor y puede ayudar al planeta."
   dialoguePanel: {fileID: 1652079598}
+  dialogueTextPanel: {fileID: 1370612337}
+  dialogos:
+  - actorTalkin: Anna
+    dialogueLine: Parce ser una <color=green><b>semilla</b></color>, pero tiene algo
+      especial.
+  - actorTalkin: 
+    dialogueLine: "\xBFPuedes escanearla Yara?"
+  - actorTalkin: IA
+    dialogueLine: Escaneando...
+  - actorTalkin: IA
+    dialogueLine: "Parece una <color=green><b>semilla</b></color> modificada para
+      crecimiento r\xE1pido."
+  - actorTalkin: Anna
+    dialogueLine: "Me pregunto el por qu\xE9 el robot lo estaria cuidando."
+  - actorTalkin: Anna
+    dialogueLine: Espero encontrar un lugar para darle agua.
   playerUI: {fileID: 619025763}
   spriteSecondary: {fileID: 2077174063}
   textKetInteract: {fileID: 826097830}
-  dialogueTextPanel: {fileID: 1370612337}
 --- !u!1001 &226675883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,8 +602,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1370612337}
     - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
       propertyPath: 'dialogueLines.Array.data[0]'
@@ -595,6 +637,66 @@ PrefabInstance:
     - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
       propertyPath: 'dialogueLines.Array.data[6]'
       value: Parece que tendre que derrotar al robot para poder tomar el objeto.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[0].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[1].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[3].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[4].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[5].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[6].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[7].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[0].dialogueLine
+      value: "\xBFQu\xE9 es lo que veo?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[1].dialogueLine
+      value: "Parece ser otro robot pero tambi\xE9n hay otro objeto a su lado."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[2].dialogueLine
+      value: "\xBFYara puedes escanearlo?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[3].dialogueLine
+      value: "No puedo escanearlo si esta tan lejos se\xF1orita Anna."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[4].dialogueLine
+      value: "Me acercar\xE9 un poco; espero que no me vea."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[5].dialogueLine
+      value: "\xA1Esquive ese golpe por los pelos!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[6].dialogueLine
+      value: Parece que tendre que derrotar al robot para poder tomar el objeto.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[7].dialogueLine
+      value: "Seria lo m\xE1s adecuado se\xF1orita."
       objectReference: {fileID: 0}
     - target: {fileID: 5847797827022252653, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
       propertyPath: m_LocalPosition.x
@@ -656,6 +758,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6a21502b18b4f468eb7041586423d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControllerText
+--- !u!1 &256089092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 256089093}
+  - component: {fileID: 256089095}
+  - component: {fileID: 256089094}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &256089093
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256089092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 585352839}
+  m_Father: {fileID: 1652079599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.00016021729}
+  m_SizeDelta: {x: 280.468, y: 201.01}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &256089094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256089092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.375, g: 0.375, b: 0.375, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &256089095
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256089092}
+  m_CullTransparentMesh: 1
 --- !u!1 &265185958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +1342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Piezas: 1'
+  m_text: 'Piezas: <b>0</b>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -1229,7 +1407,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 5, z: 2, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1472,6 +1650,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570681423}
+  m_CullTransparentMesh: 1
+--- !u!1 &585352838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 585352839}
+  - component: {fileID: 585352841}
+  - component: {fileID: 585352840}
+  m_Layer: 5
+  m_Name: TextImg (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &585352839
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585352838}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 256089093}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &585352840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585352838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Imagen  de personaje
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &585352841
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585352838}
   m_CullTransparentMesh: 1
 --- !u!1 &619025763
 GameObject:
@@ -21865,8 +22179,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -40}
+  m_AnchoredPosition: {x: 115.49609, y: 0}
+  m_SizeDelta: {x: -430.994, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1370612337
 MonoBehaviour:
@@ -21899,8 +22213,8 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
+  m_enableVertexGradient: 1
+  m_colorMode: 2
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
@@ -22387,13 +22701,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 256089093}
   - {fileID: 1370612336}
   m_Father: {fileID: 1063829673}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 200}
+  m_SizeDelta: {x: 0, y: 201.0106}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1652079600
 MonoBehaviour:
@@ -22553,7 +22868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1749831424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22774,7 +23089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7447652899662057317, guid: 71285951fc42d664cb4ebc7ab9882b14, type: 3}
       propertyPath: accions.Array.data[3].actionName
-      value: maxLine,5
+      value: maxLine,6
       objectReference: {fileID: 0}
     - target: {fileID: 7447652899662057317, guid: 71285951fc42d664cb4ebc7ab9882b14, type: 3}
       propertyPath: accions.Array.data[4].actionName
@@ -23218,8 +23533,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1370612337}
     - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
       propertyPath: 'dialogueLines.Array.data[0]'
@@ -23258,6 +23577,114 @@ PrefabInstance:
       propertyPath: 'dialogueLines.Array.data[8]'
       value: Lo bueno es que puedo destruirlo y ocupar sus piezas para reparar mi
         nave.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[0].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[1].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[2].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[3].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[4].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[5].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[6].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[7].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[8].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[9].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[0].dialogueLine
+      value: "\xBFQu\xE9 es eso?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[10].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[11].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[12].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[1].dialogueLine
+      value: Parece un robot.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[2].dialogueLine
+      value: Escaneando...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[3].dialogueLine
+      value: "Es correcto se\xF1orita Anna es un robot."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[4].dialogueLine
+      value: Aunque este se encuentra en un mal estado.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[5].dialogueLine
+      value: Tratare de acercarme para poder pedir su ayuda.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[6].dialogueLine
+      value: "\xA1Por suerte esquive ese disparo!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[7].dialogueLine
+      value: No creo que se pueda razonar con este robot.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[8].dialogueLine
+      value: "\xBFYara se puede reparar o hacer algo ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[9].dialogueLine
+      value: "Lo siento se\xF1orita Anna pero no creo que se pueda arreglar o razonar
+        con el."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[10].dialogueLine
+      value: "Su estado tan deplorable a hecho que su programaci\xF3n y l\xF3gica
+        falle."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[11].dialogueLine
+      value: Lo bueno es que sus <color=green><b>piezas</b></color> se pueden ocupar
+        para reparar la nave.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[12].dialogueLine
+      value: "Tienes raz\xF3n, podemos ocupar sus <color=green><b>piezas</b></color>
+        para la reparaci\xF3n de la nave."
       objectReference: {fileID: 0}
     - target: {fileID: 5847797827022252653, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23790,7 +24217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7447652899662057317, guid: 71285951fc42d664cb4ebc7ab9882b14, type: 3}
       propertyPath: accions.Array.data[1].actionName
-      value: maxLine,2
+      value: maxLine,6
       objectReference: {fileID: 0}
     - target: {fileID: 7447652899662057317, guid: 71285951fc42d664cb4ebc7ab9882b14, type: 3}
       propertyPath: accions.Array.data[2].actionName
@@ -23850,7 +24277,7 @@ MonoBehaviour:
   control: {fileID: 298920500}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   bulletPrefat: {fileID: 4175046689214756209, guid: bce50854a27a7fc4d88f7d94dac58a95, type: 3}
 --- !u!1001 &4976241751505372777
 PrefabInstance:
@@ -24021,7 +24448,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1165336255
   m_SortingLayer: 5
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 6014951253290142394, guid: 45a8f8c240665844b8c3fd17175a24e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -24309,6 +24736,112 @@ PrefabInstance:
       propertyPath: dialogueTextPanel
       value: 
       objectReference: {fileID: 1370612337}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[0].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[1].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[2].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[3].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[4].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[5].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[6].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[7].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[8].actorTalkin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[9].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[0].dialogueLine
+      value: "\xBFEn donde estoy?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[10].actorTalkin
+      value: Anna
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[11].actorTalkin
+      value: IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[1].dialogueLine
+      value: No me suena de nada este lugar.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[2].dialogueLine
+      value: "\xBFYara tienes informaci\xF3n de este lugar?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[3].dialogueLine
+      value: "Buscando informaci\xF3n de este lugar en la base de datos..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[4].dialogueLine
+      value: "No se obtuvo informaci\xF3n alguna se\xF1orita Anna."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[5].dialogueLine
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[6].dialogueLine
+      value: "Rayos la nave esta totalmente destruida \xBFSe puede iniciar la auto-reparaci\xF3n
+        Yara?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[7].dialogueLine
+      value: Calculando...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[8].dialogueLine
+      value: "Lo lamento se\xF1orita Anna pero no es posible hacer eso."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[9].dialogueLine
+      value: Faltan varias piezas, componentes y estructura para hacer eso.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[10].dialogueLine
+      value: "Creo que lo m\xE1s logico en este momento es empezar a avanzar para
+        pedir ayuda."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839105773005779062, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
+      propertyPath: dialogos.Array.data[11].dialogueLine
+      value: "Concuerdo con usted se\xF1orita Anna."
+      objectReference: {fileID: 0}
     - target: {fileID: 5847797827022252653, guid: 506240635e7c4bc4490f95f2776e0744, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.45
@@ -24445,16 +24978,16 @@ SceneRoots:
   - {fileID: 1063829673}
   - {fileID: 133795295}
   - {fileID: 1749831425}
-  - {fileID: 4976241751505372777}
-  - {fileID: 8689038113763842889}
   - {fileID: 8861766871037591557}
   - {fileID: 4300595893821602100}
-  - {fileID: 2001703519}
-  - {fileID: 6876623006157926199}
+  - {fileID: 8689038113763842889}
   - {fileID: 1757023033}
-  - {fileID: 226675883}
-  - {fileID: 1767639125}
+  - {fileID: 6876623006157926199}
+  - {fileID: 2001703519}
+  - {fileID: 4976241751505372777}
   - {fileID: 1835678490}
+  - {fileID: 1767639125}
+  - {fileID: 226675883}
   - {fileID: 2092360603}
   - {fileID: 963216249}
   - {fileID: 1262706544}

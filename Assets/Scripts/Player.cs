@@ -26,6 +26,7 @@ public class Player : BasicActor
     private bool dashRequest;
     public bool dashReloadOff = false;
     private bool damagueRequest;
+    private bool jump = false;
     private bool[] arrayDash;
     private bool isGrounded;
     public bool moving = true;
@@ -42,12 +43,14 @@ public class Player : BasicActor
     public Material materialWhite;
     public Input control;
     private SpriteRenderer spriteRenderer;
+    private int pointsPz;
     public LayerMask groundLayer;
     public GameObject bulletPrefat;
     private Rigidbody2D m_rigidbody;
     private ObjectRecolect currentObject;
     private Coroutine dashActive;
     private Coroutine[] dashCorutines;
+    private CardPZController controllerPoint;
 
     protected override void Awake()
     {
@@ -58,6 +61,7 @@ public class Player : BasicActor
         m_upAction = InputSystem.actions.FindAction("Jump");
         m_interaction = InputSystem.actions.FindAction("Interact");
         m_hover = InputSystem.actions.FindAction("Hover");
+        controllerPoint = FindFirstObjectByType<CardPZController>();
         arrayDash = new bool[maxDash];
 
         for (int i = 0; i < maxDash; i++)
@@ -142,7 +146,8 @@ public class Player : BasicActor
 
         if (m_upAction.WasPressedThisFrame() && isGrounded)
         {
-            m_rigidbody.linearVelocity = new Vector2(m_rigidbody.linearVelocityX, jumpForce);
+            m_rigidbody.linearVelocityY = jumpForce;
+            jump = true;
         }
     }
 
@@ -153,6 +158,10 @@ public class Player : BasicActor
         animatorUpper.SetFloat("VerticalVelocity", m_rigidbody.linearVelocityY);
         animatorLower.SetBool("IsGrounded", isGrounded);
         animatorUpper.SetBool("IsGrounded", isGrounded);
+
+        if (isGrounded && m_rigidbody.linearVelocityY <= 0.1) { jump = false; }
+        animatorLower.SetBool("Jump", jump);
+        animatorUpper.SetBool("Jump", jump);
 
         if (dashRequest && dashCount < maxDash && !freeMove)
         {
@@ -197,7 +206,7 @@ public class Player : BasicActor
         animatorLower.SetFloat("SpeedAnimation", speedAnimation);
 
         // Le pasamos el eje X a la que se movera y el eje Y, linearVelocity ya ocupa el delta Time
-        m_rigidbody.linearVelocity = new Vector2(speed, m_rigidbody.linearVelocity.y);
+        m_rigidbody.linearVelocityX = speed;
 
         if (speed != 0 && !isHover) animatorBody.transform.localScale = new Vector3(Mathf.Sign(speed), 1f, 1f);
     }
@@ -383,6 +392,13 @@ public class Player : BasicActor
             life--;
             control.VibrationController(0.5f, 0.2f);
         }
+    }
+
+    public void addPz(int points)
+    {
+        pointsPz += points;
+        controllerPoint.CallCard(pointsPz);
+
     }
 
     public void DamagueTeleport(float x, float y)

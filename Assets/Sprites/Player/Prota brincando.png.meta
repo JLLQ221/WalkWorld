@@ -1,0 +1,899 @@
+fileFormatVersion: 2
+guid: 34c059489efc184479e949c8a9ccc1c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5951076671995514
+    second: Prota brincando_0
+  - first:
+      213: -1426361036616777817
+    second: Prota brincando_1
+  - first:
+      213: 3748310808231595990
+    second: Prota brincando_2
+  - first:
+      213: 5532501734959086012
+    second: Prota brincando_3
+  - first:
+      213: -1781099459900549213
+    second: Prota brincando_4
+  - first:
+      213: -7397704085761621521
+    second: Prota brincando_5
+  - first:
+      213: -6403186466318129309
+    second: Prota brincando_6
+  - first:
+      213: 5258066899614120855
+    second: Prota brincando_7
+  - first:
+      213: 9006168072569022115
+    second: Prota brincando_8
+  - first:
+      213: 1237196738356763143
+    second: Prota brincando_9
+  - first:
+      213: -6125043672893172796
+    second: Prota brincando_10
+  - first:
+      213: -2990086497424343060
+    second: Prota brincando_11
+  - first:
+      213: -8761527157174703964
+    second: Prota brincando_12
+  - first:
+      213: 2179991515666311518
+    second: Prota brincando_13
+  - first:
+      213: 7223253034897070923
+    second: Prota brincando_14
+  - first:
+      213: 4776862249810055903
+    second: Prota brincando_15
+  - first:
+      213: -7638821235410709137
+    second: Prota brincando_16
+  - first:
+      213: 6863036550679190913
+    second: Prota brincando_17
+  - first:
+      213: 7012558597414122879
+    second: Prota brincando_18
+  - first:
+      213: -394227276146663125
+    second: Prota brincando_19
+  - first:
+      213: 4882544195464436248
+    second: Prota brincando_20
+  - first:
+      213: 8220360632136444924
+    second: Prota brincando_21
+  - first:
+      213: 5505402137451740382
+    second: Prota brincando_22
+  - first:
+      213: 2272503747934141381
+    second: Prota brincando_23
+  - first:
+      213: -2479107673002153700
+    second: Prota brincando_24
+  - first:
+      213: -8841736025688198217
+    second: Prota brincando_25
+  - first:
+      213: 1334030890137418664
+    second: Prota brincando_26
+  - first:
+      213: -2210157022042953982
+    second: Prota brincando_27
+  - first:
+      213: -7702909162383019112
+    second: Prota brincando_28
+  - first:
+      213: -2503024734592529822
+    second: Prota brincando_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Prota brincando_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7eb0130974251000800000000000000
+      internalID: 5951076671995514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfc66812dca40430800000000000000
+      internalID: 3748310808231595990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9f777f30567cc40800000000000000
+      internalID: 5532501734959086012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7dcf65a734847e0800000000000000
+      internalID: -1781099459900549213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_4
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367e48c95df4327a0800000000000000
+      internalID: -6403186466318129309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_5
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6e0f035265cfc70800000000000000
+      internalID: 9006168072569022115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_6
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ad60be0e76b2110800000000000000
+      internalID: 1237196738356763143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_7
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef74593c241186d0800000000000000
+      internalID: -2990086497424343060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_8
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.476, y: 0.549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59e7a0cbb2e04e10800000000000000
+      internalID: 2179991515666311518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_9
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.49, y: 0.549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b5dc36d562e3460800000000000000
+      internalID: 7223253034897070923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_10
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd2d6e448e2da4240800000000000000
+      internalID: 4776862249810055903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_11
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d51c381676e3f50800000000000000
+      internalID: 6863036550679190913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_12
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21228c816c678af0800000000000000
+      internalID: -394227276146663125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_13
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a9dc2b31842c340800000000000000
+      internalID: 4882544195464436248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_14
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 36
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb291c0176941270800000000000000
+      internalID: 8220360632136444924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_15
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 9
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.49255884, y: 0.48035508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4491d2c831b4c6b4faa6e8809c938947
+      internalID: -1426361036616777817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 9
+        width: 46
+        height: 25
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4803551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eba58942316db04b94f694930518e60
+      internalID: -7397704085761621521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_17
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 9
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.49, y: 0.4803551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad1418de2539d244a868417a718f408
+      internalID: 5258066899614120855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_18
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 9
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.49, y: 0.4803551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2fa299f6f6cfb4f9d316f03ead87a6
+      internalID: -6125043672893172796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_19
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 7
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 0.45, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169331caff39e4c4092b9f52af9404a3
+      internalID: -8761527157174703964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_20
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 8
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.47, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f256827691a7143418f1681c8a785b28
+      internalID: -7638821235410709137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_21
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 8
+        width: 45
+        height: 25
+      alignment: 9
+      pivot: {x: 0.48, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2f6376f8cbccb47905ddd7de56c62a
+      internalID: 7012558597414122879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_22
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 8
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.49, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07090b09339aaef46b07c71d421f1d79
+      internalID: 632038137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_23
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 8
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.47, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814b12f96401667428c9fcd68f763172
+      internalID: -150879636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_24
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 8
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.49, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbed97c151201a14a93036cb960c72d2
+      internalID: -1957633423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_25
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 8
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.47, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e2269530aa22848a674bd6dc9e4e5e
+      internalID: -1263990630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_26
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 10
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.51, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454c84430c71e3447be1910d99d2e9cf
+      internalID: -1820962242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_27
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 10
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.51, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5e17bc5f682734ab4c67c630c30f32
+      internalID: 1005489013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_28
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 10
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.49, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ef67631561ad24f8954950267c6064
+      internalID: -1339670782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota brincando_29
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 10
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.49, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3323cae70698fe14c8650beb1c2838c4
+      internalID: -1840999910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0291b11a1c7d6ef4c84b60cd98444b23
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":44.0,"y":53.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Prota brincando_0: 5951076671995514
+      Prota brincando_1: 3748310808231595990
+      Prota brincando_10: 4776862249810055903
+      Prota brincando_11: 6863036550679190913
+      Prota brincando_12: -394227276146663125
+      Prota brincando_13: 4882544195464436248
+      Prota brincando_14: 8220360632136444924
+      Prota brincando_15: -1426361036616777817
+      Prota brincando_16: -7397704085761621521
+      Prota brincando_17: 5258066899614120855
+      Prota brincando_18: -6125043672893172796
+      Prota brincando_19: -8761527157174703964
+      Prota brincando_2: 5532501734959086012
+      Prota brincando_20: -7638821235410709137
+      Prota brincando_21: 7012558597414122879
+      Prota brincando_22: 632038137
+      Prota brincando_23: -150879636
+      Prota brincando_24: -1957633423
+      Prota brincando_25: -1263990630
+      Prota brincando_26: -1820962242
+      Prota brincando_27: 1005489013
+      Prota brincando_28: -1339670782
+      Prota brincando_29: -1840999910
+      Prota brincando_3: -1781099459900549213
+      Prota brincando_4: -6403186466318129309
+      Prota brincando_5: 9006168072569022115
+      Prota brincando_6: 1237196738356763143
+      Prota brincando_7: -2990086497424343060
+      Prota brincando_8: 2179991515666311518
+      Prota brincando_9: 7223253034897070923
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

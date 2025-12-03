@@ -273,8 +273,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   materialWhite: {fileID: -876546973899608171, guid: e1b890317e4d3e248b38b916f9f8f318, type: 3}
   objectGuard: {fileID: 0}
+  prefabPoints: {fileID: 3167853989006994935, guid: e9ac6f50792faf44eb7414287782d964, type: 3}
   life: 12
   stepsRight: 1
+  pointsHave: 4
   stepsLeft: 0.8
   player: {fileID: 0}
   collisionAttack: {fileID: 6733581134850408361}

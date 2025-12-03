@@ -3,29 +3,18 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ObjectRecolect : MonoBehaviour
+public class ObjectRecolect : ControllerText
 {
-    [SerializeField, TextArea(4, 6)] public string[] dialogueLines;
-
-    public GameObject dialoguePanel;
     public GameObject playerUI;
     public SpriteRenderer spriteSecondary;
     public TextMeshProUGUI textKetInteract;
-    public TextMeshProUGUI dialogueTextPanel;
-    private InputAction m_interaction;
 
     private bool isColliderPlayer = false;
-    private bool didDialogueStart;
     private bool isInteractive = true;
-    private int lineIndex;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    private void Awake()
-    {
-        m_interaction = InputSystem.actions.FindAction("Interact");
-    }
-    void Update()
+    new void Update()
     {
         bool usingGamepad = FindFirstObjectByType<Input>().usingGamepad;
 
@@ -41,24 +30,15 @@ public class ObjectRecolect : MonoBehaviour
             }
         }
 
+        base.Update();
 
-        if (didDialogueStart && m_interaction.WasPressedThisFrame())
+        if (isColliderPlayer && m_interaction.WasPressedThisFrame() && !dialogueStart)
         {
-            if (dialogueTextPanel.text == dialogueLines[lineIndex])
+            if (!dialogueStart)
             {
-                NextDialogueLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                dialogueTextPanel.text = dialogueLines[lineIndex];
-            }
-        }
-
-        if (isColliderPlayer && m_interaction.WasPressedThisFrame() && !didDialogueStart)
-        {
-            if (!didDialogueStart)
-            {
+                Player player = FindFirstObjectByType<Player>();
+                player.moving = false;
+                player.Stop();
                 StartDialogue();
             }
         }
@@ -84,39 +64,7 @@ public class ObjectRecolect : MonoBehaviour
         }
     }
 
-    private void NextDialogueLine()
-    {
-        lineIndex++;
-        if (lineIndex < dialogueLines.Length)
-        {
-            StartCoroutine(ShowLine());
-        }
-        else
-        {
-            didDialogueStart = false;
-            dialoguePanel.SetActive(false);
-            Destroy(gameObject);
-            Player player = FindFirstObjectByType<Player>();
-            player.moving = true;
-            playerUI.SetActive(true);
-        }
-    }
-
-    public void StartDialogue()
-    {
-        playerUI.SetActive(false);
-        textKetInteract.enabled = false;
-        gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        spriteSecondary.enabled = false;
-        Player player = FindFirstObjectByType<Player>();
-        player.moving = false;
-        didDialogueStart = true;
-        dialoguePanel.SetActive(true);
-        lineIndex = 0;
-        StartCoroutine(ShowLine());
-    }
-
-    public void EnableInteractive(bool enable )
+    public void EnableInteractive(bool enable)
     {
         isInteractive = enable;
     }
@@ -129,14 +77,20 @@ public class ObjectRecolect : MonoBehaviour
         }
     }
 
-    private IEnumerator ShowLine()
+    protected override void NextDialogueLine()
     {
-        dialogueTextPanel.text = string.Empty;
-
-        foreach (char letter in dialogueLines[lineIndex])
+        lineIndex++;
+        if (lineIndex < dialogos.Count)
         {
-            dialogueTextPanel.text += letter;
-            yield return new WaitForSeconds(0.05f);
+            StartCoroutine(ShowLine());
+        }
+        else
+        {
+            dialoguePanel.SetActive(false);
+            continueStep = true;
+            Player player = FindFirstObjectByType<Player>();
+            player.moving = true;
+            Destroy(gameObject);
         }
     }
 }
