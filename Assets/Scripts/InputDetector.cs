@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Input : MonoBehaviour
+public class InputDetector : MonoBehaviour
 {
-    public bool usingGamepad = false;
+    private bool usingGamepad = false;
     private Gamepad gamepad;
 
     void Update()
@@ -35,5 +35,10 @@ public class Input : MonoBehaviour
     public void StopVibration()
     {
         gamepad.SetMotorSpeeds(0f, 0f);
+    }
+
+    public bool GetUsingGamepad()
+    {
+        return usingGamepad;
     }
 }

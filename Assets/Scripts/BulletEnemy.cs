@@ -38,10 +38,15 @@ public class BulletEnemy : MonoBehaviour
         }
         Destroy(gameObject);
     }
-    public void Scale(Vector2 scale)
+    public void Scale(int directionSpeed)
     {
-        transform.localScale = scale;
-        direction = Mathf.Sign(scale.x);
+        transform.localScale = new Vector2(transform.localScale.x * directionSpeed, transform.localScale.y);
+        direction = directionSpeed;
         speed = 2.2f;
+    }
+
+    public void FinishIdle()
+    {
+        GetComponent<Animator>().SetBool("FinishIdle", true);
     }
 }

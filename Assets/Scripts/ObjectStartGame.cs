@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObjectStartGame : MonoBehaviour
@@ -6,18 +8,39 @@ public class ObjectStartGame : MonoBehaviour
 
     public CinematicObject[] cinematicsStarts;
     public int cineaticInitial = 0;
+    public float delayRunCinematic;
+    public bool activeBlackPanel = false;
     void Start()
     {
-        StartObject();
+        cinematicsStarts[0].StopPlayerActor();
+        if (activeBlackPanel)
+        {
+            cinematicsStarts[0].ActivePanelBlack();
+        }
+        StartCoroutine(RunFirshCinematic());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator RunFirshCinematic()
     {
-        
+        float time = 0;
+        while (time < delayRunCinematic)
+        {
+            time += Time.deltaTime;
+            yield return null;
+        }
+        RunCinematic();
     }
 
-    private void StartObject()
+    private void Update()
+    {
+        if (cinematicsStarts[cineaticInitial].IsDestroyed() && cineaticInitial < cinematicsStarts.Length)
+        {
+            cineaticInitial++;
+            RunCinematic();
+        }
+    }
+
+    private void RunCinematic()
     {
         cinematicsStarts[cineaticInitial].RunActions();
     }

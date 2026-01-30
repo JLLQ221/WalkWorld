@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500b5e2f12a82eb4281df32534a51839, type: 3}
+  m_Name: EnemyBoss
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyInfo
+  life: 12
+  speed: 0
+  sounds:
+  - clip: {fileID: 8300000, guid: 8eb99dff36700394b9b64b7262be658a, type: 3}
+    type: 2
+  - clip: {fileID: 8300000, guid: 58251c7b7f66e3c40b821fced3e66881, type: 3}
+    type: 0
+  attackSounds: []
+  hurtSounds: []
+  deathSounds: []
+  stepsSounds:
+  - {fileID: 8300000, guid: f6574a848eb2e5a46ad0716ed2dc7a21, type: 3}
+  - {fileID: 8300000, guid: 68009b3fd3c60f842ab9ec1d980f64a5, type: 3}

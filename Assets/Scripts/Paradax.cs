@@ -11,25 +11,40 @@ public class Paradax : MonoBehaviour
 
     private Vector2 lastPlayerPosition;
 
-    private void Awake()
+    private void Start()
     {
         material = GetComponent<SpriteRenderer>().material;
-        playerActor = GameObject.FindGameObjectWithTag("Player").GetComponent<BasicActor>();
-        playerR = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
-        lastPlayerPosition = playerR.position;
+        if (playerActor != null)
+        {
+            playerActor = FindFirstObjectByType<Player>();
+            playerR = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+            lastPlayerPosition = playerR.position;
+        }
     }
 
     private void Update()
     {
-        Vector2 currentPosition = playerR.position;
-        Vector2 deltaPosition = currentPosition - lastPlayerPosition;
-
-        if (!playerActor.GetFreeMovie())
+        if (playerActor != null)
         {
-            offset = (deltaPosition * 11.8f) * speedMove * Time.deltaTime;
-            material.mainTextureOffset += offset;
-        }
+            Vector2 currentPosition = playerR.position;
+            Vector2 deltaPosition = currentPosition - lastPlayerPosition;
 
-        lastPlayerPosition = currentPosition;
+            if (!playerActor.GetFreeMovie())
+            {
+                offset = (deltaPosition * 11.8f) * speedMove * Time.deltaTime;
+                material.mainTextureOffset += offset;
+            }
+
+            lastPlayerPosition = currentPosition;
+        }
+        else
+        {
+            playerActor = FindFirstObjectByType<Player>();
+            if (playerActor != null)
+            {
+                playerR = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+                lastPlayerPosition = playerR.position;
+            }
+        }
     }
 }

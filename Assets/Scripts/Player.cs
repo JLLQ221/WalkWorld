@@ -13,7 +13,6 @@ public class Player : BasicActor
     private Animator animatorBody;
 
     public float WalkSpeed;
-    private float lastDash;
     private float life = 15;
     private float lastShoot;
     public float jumpForce = 4;
@@ -23,6 +22,8 @@ public class Player : BasicActor
     public int maxDash;
     public int numberDash = 0;
     private int dashCount = 0;
+    private int countPz = 0;
+    [SerializeField] private int seedCount = 0;
     private bool dashRequest;
     public bool dashReloadOff = false;
     private bool damagueRequest;
@@ -30,6 +31,7 @@ public class Player : BasicActor
     private bool[] arrayDash;
     private bool isGrounded;
     public bool moving = true;
+    private float lastStep;
 
     private InputAction m_moveAction;
     private InputAction m_shootAction;
@@ -39,29 +41,34 @@ public class Player : BasicActor
     private InputAction m_interaction;
 
     private Vector2 m_moveAmt;
+    private new AudioSource audio;
     private Material materialOrigin;
     public Material materialWhite;
-    public Input control;
+    protected InputDetector control;
     private SpriteRenderer spriteRenderer;
-    private int pointsPz;
     public LayerMask groundLayer;
     public GameObject bulletPrefat;
     private Rigidbody2D m_rigidbody;
-    private ObjectRecolect currentObject;
     private Coroutine dashActive;
     private Coroutine[] dashCorutines;
     private CardPZController controllerPoint;
+    private CardPZController controllerSeedCount;
+
+    [SerializeField] private PlayerInfo playerInfo;
 
     protected override void Awake()
     {
         dashCorutines = new Coroutine[maxDash];
+        control = FindAnyObjectByType<InputDetector>();
         m_moveAction = InputSystem.actions.FindAction("Move");
         m_shootAction = InputSystem.actions.FindAction("Attack");
         m_dashAction = InputSystem.actions.FindAction("Dash");
         m_upAction = InputSystem.actions.FindAction("Jump");
         m_interaction = InputSystem.actions.FindAction("Interact");
         m_hover = InputSystem.actions.FindAction("Hover");
-        controllerPoint = FindFirstObjectByType<CardPZController>();
+        controllerPoint = GameObject.Find("CardPz").GetComponent<CardPZController>();
+        controllerSeedCount = GameObject.Find("CardSeed").GetComponent<CardPZController>();
+        audio = GetComponent<AudioSource>();
         arrayDash = new bool[maxDash];
 
         for (int i = 0; i < maxDash; i++)
@@ -131,6 +138,7 @@ public class Player : BasicActor
                 GameObject bullet = Instantiate(bulletPrefat, transform.position + direction * 0.1f, Quaternion.identity);
                 control.VibrationController(0.32f, 0.13f);
                 bullet.GetComponent<BulletPlayer>().Scale(scale);
+                audio.PlayOneShot(playerInfo.GetSound(PlayerSoundType.Attack));
             }
         }
         else
@@ -208,7 +216,17 @@ public class Player : BasicActor
         // Le pasamos el eje X a la que se movera y el eje Y, linearVelocity ya ocupa el delta Time
         m_rigidbody.linearVelocityX = speed;
 
+        PlaySoundStep(speed);
         if (speed != 0 && !isHover) animatorBody.transform.localScale = new Vector3(Mathf.Sign(speed), 1f, 1f);
+    }
+
+    private void PlaySoundStep(float speed)
+    {
+        if (isGrounded && speed != 0 && Time.time > lastStep + 0.45f)
+        {
+            lastStep = Time.time;
+            audio.PlayOneShot(playerInfo.GetSound(PlayerSoundType.Steps));
+        }
     }
 
     private void MoveRigth()
@@ -219,6 +237,7 @@ public class Player : BasicActor
         transform.localScale = new Vector3(valorScale, transform.localScale.y, transform.localScale.z);
         animatorUpper.SetFloat("Speed", Mathf.Abs(speed));
         animatorLower.SetFloat("Speed", Mathf.Abs(speed));
+        PlaySoundStep(speed);
     }
 
     private void MoveLeft()
@@ -229,6 +248,7 @@ public class Player : BasicActor
         transform.localScale = new Vector3(-valorScale, transform.localScale.y, transform.localScale.z);
         animatorUpper.SetFloat("Speed", Mathf.Abs(speed));
         animatorLower.SetFloat("Speed", Mathf.Abs(speed));
+        PlaySoundStep(speed);
     }
 
     public void Stop()
@@ -290,22 +310,27 @@ public class Player : BasicActor
     {
         int x = (m_moveAmt.x == 0) ? ((int)animatorBody.transform.localScale.x) : ((int)Mathf.Sign(m_moveAmt.x));
         dashCount++;
-        float dashForce = 4.5f;
-        m_rigidbody.AddForceX(x * dashForce, ForceMode2D.Impulse);
+        float dashForce = 6;
         dashCorutines[dashCount - 1] = StartCoroutine(DashMove(x, dashForce));
     }
 
     IEnumerator DashMove(int x, float dashForce)
     {
-        for (int i = 0; i < 50; i++)
+        float dashDuration = 0.2f; // duración total del dash en segundos
+        float elapsed = 0f;
+
+        while (elapsed < dashDuration)
         {
             if (freeMove) { break; }
+
+            // Aplicamos fuerza proporcional al tiempo
             m_rigidbody.AddForceX(x * dashForce, ForceMode2D.Impulse);
-            yield return new WaitForSeconds(0.001f);
+
+            elapsed += Time.deltaTime;
+            yield return null; // espera al siguiente frame
         }
 
         arrayDash[dashCount - 1] = true;
-        // Restablece colisiones
         EnableCollision(false);
 
         animatorBody.SetBool("Dash", false);
@@ -316,6 +341,7 @@ public class Player : BasicActor
     public void Dash()
     {
         animatorBody.SetBool("Dash", true);
+        audio.PlayOneShot(playerInfo.GetSound(PlayerSoundType.Dash), 1.3f);
         // Ignora colisiones entre Player y Enemy
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Attack"), true);
@@ -336,6 +362,7 @@ public class Player : BasicActor
     {
         ShowOtherSprites(false);
         animatorBody.SetBool("Dash", true);
+        audio.PlayOneShot(playerInfo.GetSound(PlayerSoundType.Dash), 1.3f);
 
         // Ignora colisiones entre Player y Enemy
         int x = (int)animatorBody.transform.localScale.x;
@@ -394,12 +421,19 @@ public class Player : BasicActor
         }
     }
 
-    public void addPz(int points)
+    public void AddPz(int points)
     {
-        pointsPz += points;
-        controllerPoint.CallCard(pointsPz);
-
+        controllerPoint.CallCard(points, countPz);
+        countPz += points;
     }
+
+    public void AddSedd(int points)
+    {
+        controllerSeedCount.CallCard(points, seedCount);
+        seedCount += points;
+    }
+
+    public int GetSeddCount { get { return seedCount; } }
 
     public void DamagueTeleport(float x, float y)
     {

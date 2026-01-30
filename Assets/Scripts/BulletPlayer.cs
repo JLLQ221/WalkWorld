@@ -8,6 +8,7 @@ public class BulletPlayer : MonoBehaviour
     private Rigidbody2D rb;
     public GameObject hitParticle;
     public ParticleSystem particuleEmisor;
+    public bool notMoving = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,7 +19,7 @@ public class BulletPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rb == null) return;
+        if (rb == null || notMoving) return;
         rb.linearVelocityX = direction * speed;
     }
 
@@ -61,5 +62,10 @@ public class BulletPlayer : MonoBehaviour
     public void Scale(Vector2 scale)
     {
         transform.localScale = scale;
+    }
+
+    public void FinishIdle()
+    {
+        GetComponent<Animator>().SetBool("FinishIdle", true);
     }
 }

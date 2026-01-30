@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 
 public class Entity
@@ -59,7 +60,7 @@ public class Entity
 
         if (accionContentGome)
         {
-            float var = float.Parse(accionSeparate[1]);
+            float var = float.Parse(accionSeparate[1], CultureInfo.InvariantCulture);
             if (accionsFloat.ContainsKey(accionKey))
             {
                 accionsFloat[accionKey](var);

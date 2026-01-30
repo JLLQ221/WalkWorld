@@ -6,6 +6,7 @@ public class FollowText : MonoBehaviour
     private Transform unit;
     private Transform worldSpaceCanvas;
     private Vector3 offset;
+    public bool followParent = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +24,9 @@ public class FollowText : MonoBehaviour
         if (!unit) { return; }
         transform.rotation = Quaternion.LookRotation(transform.position - mainCam.transform.position); // look at camera
 
-        transform.position = unit.position + offset;
+        if (followParent)
+        {
+            transform.position = unit.position + offset;
+        }
     }
 }

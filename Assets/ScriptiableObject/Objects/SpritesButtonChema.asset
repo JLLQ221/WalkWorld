@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47ec7faf885a2f488d758cd4cc1f290, type: 3}
+  m_Name: SpritesButtonChema
+  m_EditorClassIdentifier: Assembly-CSharp::SpritesButtonChema
+  pcAsset: {fileID: 11400000, guid: 15c6a304b576097499811b066d720425, type: 2}
+  controllerAsset: {fileID: 11400000, guid: 0f4a05da188e4e945ae7ff2a30bf4bb5, type: 2}
+  selectAsset: {fileID: 11400000, guid: 15c6a304b576097499811b066d720425, type: 2}
+  mappings:
+  - action: 1
+    variant: 0
+    indexPC: 0
+    indexController: 0
+  - action: 0
+    variant: 0
+    indexPC: 1
+    indexController: 1
+  - action: 0
+    variant: 1
+    indexPC: 2
+    indexController: 2
+  - action: 5
+    variant: 0
+    indexPC: 3
+    indexController: 3
+  - action: 2
+    variant: 0
+    indexPC: 4
+    indexController: 4
+  - action: 3
+    variant: 0
+    indexPC: 5
+    indexController: 5
+  - action: 3
+    variant: 1
+    indexPC: 6
+    indexController: 5

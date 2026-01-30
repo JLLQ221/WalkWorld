@@ -1,6 +1,5 @@
 using System.Collections;
 using TMPro;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,7 +7,7 @@ public class CardPZController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private RectTransform transformReal;
-    public TextMeshProUGUI pzText;
+    private TextMeshProUGUI pzText;
     private float moveForce = 20;
     private int countCall = 0;
     protected bool stopCourotina = false;
@@ -17,17 +16,21 @@ public class CardPZController : MonoBehaviour
     private int numberPz = 0;
     private int maxPz = 0;
     private Coroutine outCourotine = null;
-
+    public string textPoint;
     private Mesh mesh;
     private Vector3[] vertices;
+    private InputAction action;
+    private bool isFirstMove = true;
+    private bool isDisable = false;
+
+    private void Awake()
+    {
+        pzText = GetComponentInChildren<TextMeshProUGUI>();
+        action = InputSystem.actions.FindAction("Interact");
+    }
     void Start()
     {
         transformReal = GetComponent<RectTransform>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void ShakeText()
@@ -55,11 +58,26 @@ public class CardPZController : MonoBehaviour
         pzText.canvasRenderer.SetMesh(mesh);
     }
 
-    public void CallCard(int addPz)
+    public void CallCard(int addPz, int counPrincipal)
     {
-        maxPz += addPz;
-        StartCoroutine(AddPzCourotine(addPz));
+        maxPz = counPrincipal + addPz;
+
+        if (isFirstMove)
+        {
+            numberPz = counPrincipal;
+        }
+
+        float restIs = Mathf.Sign(addPz);
+        if (restIs >= 1)
+        {
+            StartCoroutine(AddPzCourotine(addPz));
+        }
+        else if (restIs <= -1)
+        {
+            StartCoroutine(RestPzCourotine(Mathf.Abs(addPz)));
+        }
         MoveCard();
+        isFirstMove = false;
     }
 
     public void MoveCard()
@@ -82,17 +100,33 @@ public class CardPZController : MonoBehaviour
 
     public void ChangeText(int pz)
     {
-        pzText.text = $"Piezas: <b>{pz}</b>";
+        pzText.text = $"{textPoint}: <b>{pz}</b>";
     }
 
     IEnumerator AddPzCourotine(int endFor)
     {
         float multiplicateCall = countCall * 0.4f;
-        yield return new WaitForSeconds(1.3f + multiplicateCall);
+        yield return new WaitForSeconds(1f + multiplicateCall);
         for (int i = 0; i < endFor; i++)
         {
-            yield return new WaitForSeconds(1.2f + (multiplicateCall));
+            yield return new WaitForSeconds(1f + (multiplicateCall));
             numberPz++;
+            ChangeText(numberPz);
+        }
+        if (numberPz == maxPz && outCourotine == null)
+        {
+            outCourotine = StartCoroutine(MoveOutCorutine());
+        }
+    }
+
+    IEnumerator RestPzCourotine(int endFor)
+    {
+        float multiplicateCall = countCall * 0.4f;
+        yield return new WaitForSeconds(1f + multiplicateCall);
+        for (int i = 0; i < endFor; i++)
+        {
+            yield return new WaitForSeconds(1f + (multiplicateCall));
+            numberPz--;
             ChangeText(numberPz);
         }
         if (numberPz == maxPz && outCourotine == null)
@@ -104,7 +138,7 @@ public class CardPZController : MonoBehaviour
     private float MoveCardDirection(float position)
     {
         float x = transformReal.anchoredPosition.x + position;
-        transformReal.anchoredPosition = new Vector3(x, 0, 0);
+        transformReal.anchoredPosition = new Vector3(x, transformReal.anchoredPosition.y, 0);
         return x;
     }
 

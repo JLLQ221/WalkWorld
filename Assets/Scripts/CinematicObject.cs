@@ -1,48 +1,84 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using UnityEngine;
-using UnityEngine.Rendering;
 
-public class CinematicObject : MonoBehaviour
+public class CinematicObject : CameraController
 {
-    public GameObject playerUI;
-    public GameObject cinemticUI;
+    private GameObject playerUI;
+    private GameObject cinemticUI;
+    private GameObject screenBlack;
+    private BasicActor player;
+    private CinemachineBrain brainCamera;
+    public bool offUIEnd = true;
 
-    [SerializeField] public BasicActor[] objects;
-    private Entity[] actors;
     private bool active = false;
+    public bool activeScreenBlack = false;
+    [SerializeField] private bool chaseTransitionCamera = true;
 
+    [SerializeField] public BasicActor[] actors;
     [SerializeField] public List<CinematicAction> accions = new();
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         // actors tenga el mismo tamaño que objects
-        actors = new Entity[objects.Length];
+        playerUI = GameObject.Find("CanvaUI").transform.Find("UIPlayer").gameObject;
+        cinemticUI = GameObject.Find("CanvaUI").transform.Find("UICinematic").gameObject;
+        screenBlack = GameObject.Find("CanvaUI").transform.Find("PanelBlack").gameObject;
+        brainCamera = GameObject.Find("Main Camera").GetComponent<CinemachineBrain>();
 
-        for (int i = 0; i < objects.Length; i++)
+        player = FindFirstObjectByType<Player>();
+
+        foreach (var accion in accions)
         {
-            if (objects[i] != null)
+            if (accion.tag == ActorTag.Player)
             {
-                Entity entity = objects[i].GetEntity();
-                if (entity != null)
-                {
-                    actors[i] = entity;
-                }
+                accion.actor = player;
             }
         }
     }
 
+    private void Start()
+    {
+        if (actors.Length <= 0)
+        {
+            actors = new BasicActor[1];
+        }
+        actors[0] = player;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Player player = collision.GetComponent<Player>();
         if (!active)
         {
-            if (player != null)
+            if (collision.CompareTag("Player"))
             {
                 active = true;
                 StartCoroutine(RunCinematic());
             }
         }
+    }
+
+    public void StopActors()
+    {
+        foreach (var actor in actors)
+        {
+            actor.SetFreeMoving(true);
+            actor.GetEntity().RunAction("stop");
+        }
+    }
+
+    public void ActivePanelBlack()
+    {
+        screenBlack.SetActive(true);
+    }
+
+    public void StopPlayerActor()
+    {
+        actors[0].SetFreeMoving(true);
+        actors[0].GetEntity().RunAction("stop");
     }
 
     public void RunActions()
@@ -53,34 +89,75 @@ public class CinematicObject : MonoBehaviour
 
     private IEnumerator RunCinematic()
     {
+        if (brainCamera != null && chaseTransitionCamera)
+        {
+            // Aquí está la forma correcta de asignar el blend
+            brainCamera.DefaultBlend.Style = CinemachineBlendDefinition.Styles.EaseInOut;
+        }
+        else if (!chaseTransitionCamera)
+        {
+            brainCamera.DefaultBlend.Style = CinemachineBlendDefinition.Styles.Cut;
+            brainCamera.DefaultBlend.Time = 0;
+        }
+
         playerUI.SetActive(false);
         cinemticUI.SetActive(true);
 
-        foreach (var obj in objects)
-        {
-            obj.SetFreeMoving(true);
-            obj.GetEntity().RunAction("stop");
-        }
+        StopActors();
 
         for (int i = 0; i < accions.Count; i++)
         {
             yield return RunAccion(accions[i]);
         }
 
-
-        foreach (var obj in accions)
+        if (activeScreenBlack)
         {
-            obj.actor.SetFreeMoving(false);
+            screenBlack.GetComponent<CanvasGroup>().DOFade(1f, 1.5f).SetEase(Ease.Linear);
+            screenBlack.SetActive(true);
+            screenBlack.transform.Find("Text").gameObject.SetActive(true);
         }
 
-        foreach (var obj in objects)
+        if (!activeScreenBlack)
         {
-            obj.SetFreeMoving(false);
-            obj.NormalMoving();
+            foreach (var obj in actors)
+            {
+                obj.SetFreeMoving(false);
+                obj.NormalMoving();
+            }
+
+
+            if (offUIEnd)
+            {
+                playerUI.SetActive(true);
+                cinemticUI.SetActive(false);
+            }
         }
 
-        playerUI.SetActive(true);
-        cinemticUI.SetActive(false);
+        if (chaseTransitionCamera)
+        {
+            StartCoroutine(ReturnCamera());
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    IEnumerator ReturnCamera()
+    {
+        float time = 0;
+        float timeEnd = 1f;
+        while (time < timeEnd)
+        {
+            yield return null;
+        }
+        if (brainCamera != null)
+        {
+            // Aquí está la forma correcta de asignar el blend
+            brainCamera.DefaultBlend.Style = CinemachineBlendDefinition.Styles.Cut;
+            brainCamera.DefaultBlend.Time = 0;
+        }
+        Destroy(gameObject);
     }
 
 
@@ -90,15 +167,20 @@ public class CinematicObject : MonoBehaviour
         entity?.RunAction(accion.actionName);
 
         // Espera activa hasta que el actor indique que se puede continuar
-        while (!accion.actor.GetContinue())
+        while (!accion.actor.GetContinueStep())
         {
             yield return null; // espera un frame antes de volver a checar
         }
 
-        // Delay final antes de pasar a la siguiente acción
+        // Delay final antes de pasar a la siguiente acción usando deltaTime
         if (accion.delay > 0f)
         {
-            yield return new WaitForSeconds(accion.delay);
+            float elapsed = 0f;
+            while (elapsed < accion.delay)
+            {
+                elapsed += Time.deltaTime;
+                yield return null; // esperar un frame y acumular tiempo
+            }
         }
     }
 }
@@ -108,6 +190,9 @@ public class CinematicObject : MonoBehaviour
 public class CinematicAction
 {
     public BasicActor actor;       // Referencia directa al actor
+    public ActorTag tag;
     public string actionName;    // Nombre de la acción a ejecutar
     public float delay;          // Tiempo de espera antes de la siguiente
 }
+
+public enum ActorTag { Player, Enemy, Controller }

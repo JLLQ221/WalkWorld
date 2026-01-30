@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: d7a53750488b4be4897b99db3dec7554
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7979328396713136486
+    second: Inteligencia Artificial _0
+  - first:
+      213: -2623059593059234868
+    second: Inteligencia Artificial _1
+  - first:
+      213: 5062398175084178509
+    second: Inteligencia Artificial _2
+  - first:
+      213: -5131729873856017961
+    second: Inteligencia Artificial _3
+  - first:
+      213: -1451235766376799024
+    second: Inteligencia Artificial _4
+  - first:
+      213: 6317343109580944187
+    second: Inteligencia Artificial _5
+  - first:
+      213: -3938609921500918345
+    second: Inteligencia Artificial _6
+  - first:
+      213: -3369051762505436626
+    second: Inteligencia Artificial _7
+  - first:
+      213: 5062221802456508925
+    second: Inteligencia Artificial _8
+  - first:
+      213: -3496644768450625731
+    second: Inteligencia Artificial _9
+  - first:
+      213: 5117123640118770260
+    second: Inteligencia Artificial _10
+  - first:
+      213: -6131938068424828804
+    second: Inteligencia Artificial _11
+  - first:
+      213: -5952836215886641335
+    second: Inteligencia Artificial _12
+  - first:
+      213: 4703827092996328918
+    second: Inteligencia Artificial _13
+  - first:
+      213: 6535434513135349541
+    second: Inteligencia Artificial _14
+  - first:
+      213: 9089059375157275700
+    second: Inteligencia Artificial _15
+  - first:
+      213: -6716150540601609988
+    second: Inteligencia Artificial _16
+  - first:
+      213: 1060082773705489801
+    second: Inteligencia Artificial _17
+  - first:
+      213: -7117421671220822199
+    second: Inteligencia Artificial _18
+  - first:
+      213: 5746770286718329431
+    second: Inteligencia Artificial _19
+  - first:
+      213: 8441335841989348991
+    second: Inteligencia Artificial _20
+  - first:
+      213: 1955606152432489830
+    second: Inteligencia Artificial _21
+  - first:
+      213: 4609736535696917635
+    second: Inteligencia Artificial _22
+  - first:
+      213: 2794054666112178967
+    second: Inteligencia Artificial _23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Inteligencia Artificial _0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ee9b7791bb34190800000000000000
+      internalID: -7979328396713136486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb060b9235099bd0800000000000000
+      internalID: -2623059593059234868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _2
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c6a798150414640800000000000000
+      internalID: 5062398175084178509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d94d896ede68c8b0800000000000000
+      internalID: -5131729873856017961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _4
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4e4cb62cc2cdbe0800000000000000
+      internalID: -1451235766376799024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _5
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3375d26616bba750800000000000000
+      internalID: 6317343109580944187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _6
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdcb10e42f3759c0800000000000000
+      internalID: -3938609921500918345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _7
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22b5f1a549be31d0800000000000000
+      internalID: -3369051762505436626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _8
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df968a598ef904640800000000000000
+      internalID: 5062221802456508925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _9
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fb5ceeb1c697fc0800000000000000
+      internalID: -3496644768450625731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _10
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a7809c6dca30740800000000000000
+      internalID: 5117123640118770260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _11
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78d7dea0daf6eaa0800000000000000
+      internalID: -6131938068424828804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _12
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9470ff94007436da0800000000000000
+      internalID: -5952836215886641335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _13
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd87e2b1d9574140800000000000000
+      internalID: 4703827092996328918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _14
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fa240401782ba50800000000000000
+      internalID: 6535434513135349541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _15
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ceea68853d22e70800000000000000
+      internalID: 9089059375157275700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _16
+      rect:
+        serializedVersion: 2
+        x: 2247
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0b461caa07bc2a0800000000000000
+      internalID: -6716150540601609988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _17
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98df9378aab26be00800000000000000
+      internalID: 1060082773705489801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _18
+      rect:
+        serializedVersion: 2
+        x: 2527
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f373223b6d93d90800000000000000
+      internalID: -7117421671220822199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _19
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752ad99c021a0cf40800000000000000
+      internalID: 5746770286718329431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _20
+      rect:
+        serializedVersion: 2
+        x: 2807
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e4c836936a52570800000000000000
+      internalID: 8441335841989348991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _21
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6659e443f65b32b10800000000000000
+      internalID: 1955606152432489830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _22
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384ca5ea4f219ff30800000000000000
+      internalID: 4609736535696917635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inteligencia Artificial _23
+      rect:
+        serializedVersion: 2
+        x: 3227
+        y: 8
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b93a05ae976c620800000000000000
+      internalID: 2794054666112178967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Inteligencia Artificial _0: -7979328396713136486
+      Inteligencia Artificial _1: -2623059593059234868
+      Inteligencia Artificial _10: 5117123640118770260
+      Inteligencia Artificial _11: -6131938068424828804
+      Inteligencia Artificial _12: -5952836215886641335
+      Inteligencia Artificial _13: 4703827092996328918
+      Inteligencia Artificial _14: 6535434513135349541
+      Inteligencia Artificial _15: 9089059375157275700
+      Inteligencia Artificial _16: -6716150540601609988
+      Inteligencia Artificial _17: 1060082773705489801
+      Inteligencia Artificial _18: -7117421671220822199
+      Inteligencia Artificial _19: 5746770286718329431
+      Inteligencia Artificial _2: 5062398175084178509
+      Inteligencia Artificial _20: 8441335841989348991
+      Inteligencia Artificial _21: 1955606152432489830
+      Inteligencia Artificial _22: 4609736535696917635
+      Inteligencia Artificial _23: 2794054666112178967
+      Inteligencia Artificial _3: -5131729873856017961
+      Inteligencia Artificial _4: -1451235766376799024
+      Inteligencia Artificial _5: 6317343109580944187
+      Inteligencia Artificial _6: -3938609921500918345
+      Inteligencia Artificial _7: -3369051762505436626
+      Inteligencia Artificial _8: 5062221802456508925
+      Inteligencia Artificial _9: -3496644768450625731
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

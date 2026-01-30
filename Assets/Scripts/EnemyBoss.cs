@@ -3,11 +3,9 @@ using UnityEngine;
 
 public class EnemyBoss : Enemy
 {
-    public GameObject player;
     public Collider2D collisionAttack;
 
     private float distancePlayer;
-    private bool attack = false;
 
     // Update is called once per frame
     void Update()
@@ -17,12 +15,6 @@ public class EnemyBoss : Enemy
         speed = Guard();
         rgb2D.linearVelocityX = speed;
         animationEnemy.SetFloat("Speed", Mathf.Abs(speed));
-    }
-
-    private void Attack()
-    {
-        attack = true;
-        animationEnemy.SetBool("Attack", true);
     }
 
     private float Guard()
@@ -37,9 +29,17 @@ public class EnemyBoss : Enemy
             // Lo que hacemos es calcular la distancia, posición, del jugador y del enemigo entonces
             // si el jugador esta atras del enemigo su posición es negativa por tanto el enemigo mirara a la
             // derecha de lo contrario mirara a la izquierda
-            transform.localScale = new Vector3((direction.x > 0.0f) ? scaleX : -scaleX, transform.localScale.y, transform.localScale.z);
-            this.speed = 1.3f * direction.x;
-            directionWatch = 2;
+            if (!attack)
+            {
+                transform.localScale = new Vector3((direction.x > 0.0f) ? scaleX : -scaleX, transform.localScale.y, transform.localScale.z);
+                this.speed = 1.3f * direction.x;
+                directionWatch = 2;
+                if (speed != 0 && Time.time > lastStep + 0.4f)
+                {
+                    lastStep = Time.time;
+                    audio.PlayOneShot(enemyInfo.GetSound(EnemySoundType.Step));
+                }
+            }
         }
         else if (distancePlayer < 0.3f)
         {

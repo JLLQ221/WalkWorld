@@ -27,7 +27,7 @@ public class BasicActor : MonoBehaviour
         }
     }
 
-    public void MovePosition(float xGo)
+    protected virtual void MovePosition(float xGo)
     {
         continueStep = false;
         StartCoroutine(WalkPosition(xGo)); // pasa el parámetro
@@ -37,7 +37,7 @@ public class BasicActor : MonoBehaviour
     {
         bool continueWhile = true;
         float xOrigin = transform.position.x;
-        bool isWalkRigth = Mathf.Sign(xOrigin - xGo) < 0;
+        bool isWalkRight = xGo > xOrigin;
 
         while (continueWhile)
         {
@@ -49,7 +49,7 @@ public class BasicActor : MonoBehaviour
                 yield break;
             }
 
-            if (isWalkRigth)
+            if (isWalkRight)
             {
                 entity.RunAction("moveRigth");
             }
@@ -57,7 +57,13 @@ public class BasicActor : MonoBehaviour
             {
                 entity.RunAction("moveLeft");
             }
-            yield return new WaitForSeconds(0.1f);
+            float time = 0;
+            float timeEnd = 0.1f;
+            while (time < timeEnd)
+            {
+                time += Time.deltaTime;
+                yield return null;
+            }
         }
     }
 
@@ -70,10 +76,8 @@ public class BasicActor : MonoBehaviour
     {
 
     }
-
+    public void SetContinue(bool a) => continueStep = a;
     public bool GetFreeMovie() => freeMove;
-
-    public bool GetContinue() => continueStep;
-
+    public bool GetContinueStep() => continueStep;
     public Entity GetEntity() => entity;
 }

@@ -1,6 +1,5 @@
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class TextPoints : MonoBehaviour
@@ -19,12 +18,6 @@ public class TextPoints : MonoBehaviour
         MoveCount();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void MoveCount()
     {
         float xReal = reactTransform.anchoredPosition.x;
@@ -34,7 +27,6 @@ public class TextPoints : MonoBehaviour
         float resultY = Mathf.Abs(y / 490);
         forceX = xReal >= -200 && xReal <= 100 ? 0.5f : resultX;
         forceY = y != 0 ? resultY : 0.5f;
-        Debug.Log($"xReal = {xReal}, x = {x}, resultado {resultX}");
         StartCoroutine(MoveCountCourotine());
     }
 
@@ -42,13 +34,13 @@ public class TextPoints : MonoBehaviour
     {
         this.points = points;
         float sign = Mathf.Sign(points);
-        textPoint.text = sign > 0 ? "+" : "-";
-        textPoint.text += points;
+        int rando = Random.Range(0, 1);
+        textPoint.text = $"<sprite={rando}>";
     }
 
     private void AddPoint()
     {
-        player.addPz(points);
+        player.AddPz(points);
     }
 
     private void Destroy()
@@ -93,14 +85,20 @@ public class TextPoints : MonoBehaviour
                 yield break;
             }
 
-            float xStep = continueX ? x + (forceX * ((xOrigin <= 0) ? 14f : (forceX >= 0.000 && forceX <= 0.099f) ? 100f : 13f )) : x;
-            Debug.Log($"La fuerza es {xStep - x}");
+            float xStep = continueX ? x + (forceX * ((xOrigin <= 0) ? 14f : (forceX >= 0.000 && forceX <= 0.099f) ? 100f : 13f)) : x;
             float yStep = continueY ? y + (forceY * 12f) : y;
 
             textPoint.color = new Color(textPoint.color.r, textPoint.color.g, textPoint.color.b, 1f - (count * forceY * 0.02f));
             reactTransform.anchoredPosition = new Vector2(xStep, yStep);
             count++;
-            yield return new WaitForSeconds(0.01f);
+
+            float time = 0;
+            float timeEnd = 0.01f;
+            while (time < timeEnd)
+            {
+                time += Time.deltaTime;
+                yield return null;
+            }
         }
     }
 }

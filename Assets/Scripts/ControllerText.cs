@@ -6,28 +6,32 @@ using UnityEngine.InputSystem;
 
 public class ControllerText : BasicActor
 {
-    public GameObject dialoguePanel;
-    public TextMeshProUGUI dialogueTextPanel;
+    protected GameObject dialoguePanel;
+    protected TextMeshProUGUI dialogueTextPanel;
+    protected TextMeshProUGUI textActorTalk;
     protected InputAction m_interaction;
+    protected GameObject canvaUI;
+    protected GameObject panelTalkActor;
+    protected Animator imgActorTalk;
 
     [SerializeField] public List<Dialogue> dialogos = new();
 
-    private string actorNow = null;
-    private string actorAfter = null;
+    private Actor actorNow;
+    private Actor actorAfter = Actor.None;
     protected bool dialogueStart = false;
     private bool isContinueNormal = true;
     protected int lineIndex = 0;
     private int lineMax = -1;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        m_interaction = InputSystem.actions.FindAction("Interact");
-        actorNow = dialogos[0].actorTalkin;
-    }
-
     protected override void Awake()
     {
+        canvaUI = GameObject.Find("CanvaUI");
+        // Encuentra el hijo aunque esté desactivado
+        dialoguePanel = canvaUI.transform.Find("DialoguePanel").gameObject;
+        panelTalkActor = dialoguePanel.transform.Find("PanelTalkActor").gameObject;
+        imgActorTalk = dialoguePanel.transform.Find("PanelImgTalk").GetComponentInChildren<Animator>();
+        textActorTalk = panelTalkActor.GetComponentInChildren<TextMeshProUGUI>(true);
+        dialogueTextPanel = dialoguePanel.GetComponentInChildren<TextMeshProUGUI>(true);
         base.Awake();
 
         entity.AddAction<float>("maxLine", MaxLineShow);
@@ -35,12 +39,20 @@ public class ControllerText : BasicActor
         entity.AddAction("continueNormal", ContinueNormalLine);
     }
 
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        m_interaction = InputSystem.actions.FindAction("Interact");
+    }
+
+
     // Update is called once per frame
     protected void Update()
     {
         if (dialogueStart && m_interaction.WasPressedThisFrame())
         {
-            string dialogue = $"{(actorNow.Length == 0 ? actorAfter : actorNow)}: {dialogos[lineIndex].dialogueLine}";
+            string dialogue = dialogos[lineIndex].dialogueLine;
             if (dialogueTextPanel.text.Equals(dialogue))
             {
                 if (isContinueNormal)
@@ -58,6 +70,11 @@ public class ControllerText : BasicActor
                 dialogueTextPanel.text = dialogue;
             }
         }
+    }
+
+    public override void NormalMoving()
+    {
+        Destroy(gameObject);
     }
 
     private void MaxLineShow(float stopLine)
@@ -116,23 +133,30 @@ public class ControllerText : BasicActor
 
     private void SelectImgAndColor()
     {
-        actorNow = dialogos[lineIndex].actorTalkin;
-        dialogueTextPanel.text = $"{(actorNow.Length == 0 ? actorAfter : actorNow)}: ";
-      
-        if (actorNow.Equals(actorAfter) || actorNow.Length <= 0)
+        actorNow = dialogos[lineIndex].actor;
+
+        if (actorNow.Equals(actorAfter))
         {
             return;
         }
 
-        switch (actorNow.ToLower())
+        imgActorTalk.SetInteger("ActorTalk", ((int)actorNow));
+        textActorTalk.text = actorNow.ToString();
+
+        switch (actorNow)
         {
-            case "anna":
+            case Actor.Anna:
                 dialogueTextPanel.enableVertexGradient = false;
+                textActorTalk.enableVertexGradient = false;
                 dialogueTextPanel.color = Color.white;
+                textActorTalk.color = Color.white;
                 break;
-            case "ia":
+            case Actor.IA:
                 // Dividor los numeros entre 255 para que quede en float
-                dialogueTextPanel.colorGradientPreset = new TMP_ColorGradient(Color.white, new Color(0.8f, 0.99f, 1f), new Color(0.4f,0.78f,1f), new Color(0.24f,0.68f,0.98f));
+                TMP_ColorGradient colorIA = new(Color.white, new Color(0.8f, 0.99f, 1f), new Color(0.4f, 0.78f, 1f), new Color(0.24f, 0.68f, 0.98f));
+                dialogueTextPanel.colorGradientPreset = colorIA;
+                textActorTalk.colorGradientPreset = colorIA;
+                textActorTalk.enableVertexGradient = true;
                 dialogueTextPanel.enableVertexGradient = true;
                 break;
         }
@@ -155,11 +179,33 @@ public class ControllerText : BasicActor
     {
         dialogueTextPanel.text = string.Empty;
         SelectImgAndColor();
+        float delay = dialogos[lineIndex].delay == 0 ? 0.05f : dialogos[lineIndex].delay;
 
-        foreach (char letter in dialogos[lineIndex].dialogueLine)
+        string line = dialogos[lineIndex].dialogueLine;
+        for (int i = 0; i < line.Length; i++)
         {
-            dialogueTextPanel.text += letter;
-            yield return new WaitForSeconds(0.05f);
+            // Si detectamos inicio de etiqueta
+            if (line[i] == '<')
+            {
+                int closingIndex = line.IndexOf('>', i);
+                if (closingIndex != -1)
+                {
+                    // Añadimos la etiqueta completa sin delay
+                    string tag = line.Substring(i, closingIndex - i + 1);
+                    dialogueTextPanel.text += tag;
+                    i = closingIndex; // saltamos hasta el final de la etiqueta
+                    continue;
+                }
+            }
+
+            // Añadimos letra normal con delay
+            dialogueTextPanel.text += line[i];
+            float time = 0;
+            while (time < delay)
+            {
+                time += Time.deltaTime;
+                yield return null; // esperar un frame y acumular tiempo
+            }
         }
     }
 }
@@ -167,6 +213,9 @@ public class ControllerText : BasicActor
 [System.Serializable]
 public class Dialogue
 {
-    public string actorTalkin = null;
+    public Actor actor;
     [SerializeField, TextArea(4, 6)] public string dialogueLine;
+    public float delay = 0.05f;
 }
+
+public enum Actor { Anna, IA, None }

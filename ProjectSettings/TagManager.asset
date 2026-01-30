@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Floor
+  - PlayerBody
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - Enemy
   - Object
   - Attack
-  - 
-  - 
+  - VisibleObject
+  - Background
   - 
   - 
   - 
@@ -47,6 +48,9 @@ TagManager:
     locked: 0
   - name: Floor
     uniqueID: 1020269713
+    locked: 0
+  - name: VisibleObject
+    uniqueID: 2834893747
     locked: 0
   - name: Enemy
     uniqueID: 2239867837

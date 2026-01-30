@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class EnemyBasic : Enemy
 {
-    public GameObject player;
     public GameObject bulletPrefat;
 
     private float distancePlayer;
-    private bool attack = false;
 
     private Coroutine coroutineWatch;
     private bool continuoWatch = true;
@@ -35,8 +33,16 @@ public class EnemyBasic : Enemy
             // Lo que hacemos es calcular la distancia, posición, del jugador y del enemigo entonces
             // si el jugador esta atras del enemigo su posición es negativa por tanto el enemigo mirara a la
             // derecha de lo contrario mirara a la izquierda
-            transform.localScale = new Vector3((direction.x > 0.0f) ? scaleX : -scaleX, transform.localScale.y, transform.localScale.z);
-            speed = 1.3f * direction.x;
+            if (!attack)
+            {
+                transform.localScale = new Vector3((direction.x > 0.0f) ? scaleX : -scaleX, transform.localScale.y, transform.localScale.z);
+                speed = 1.3f * direction.x;
+                if (speed != 0 && Time.time > lastStep + 0.4f)
+                {
+                    lastStep = Time.time;
+                    audio.PlayOneShot(enemyInfo.GetSound(EnemySoundType.Step));
+                }
+            }
             continuoWatch = false;
         }
         else if (distancePlayer < minVision)
@@ -74,22 +80,15 @@ public class EnemyBasic : Enemy
         coroutineWatch = null;
     }
 
-    private void Attack()
-    {
-        attack = true;
-        animationEnemy.SetBool("Attack", attack);
-    }
-
     public void Shoot()
     {
         Vector3 direction;
         if (transform.localScale.x == 1.0f) direction = Vector2.right;
         else direction = Vector2.left;
 
-        Vector2 scale;
-        scale = new Vector2(Mathf.Sign(transform.localScale.x) * 0.4f, 0.4f);
+        int directionBullet = (int)Mathf.Sign(transform.localScale.x);
         GameObject bullet = Instantiate(bulletPrefat, transform.position + direction * 0.1f, Quaternion.identity);
-        bullet.GetComponent<BulletEnemy>().Scale(scale);
+        bullet.GetComponent<BulletEnemy>().Scale(directionBullet);
     }
     public void EndAttack()
     {

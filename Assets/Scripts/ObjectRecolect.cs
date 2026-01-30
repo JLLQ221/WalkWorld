@@ -1,4 +1,3 @@
-using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,27 +6,36 @@ public class ObjectRecolect : ControllerText
 {
     public GameObject playerUI;
     public SpriteRenderer spriteSecondary;
+    private SpriteRenderer spritePrimary;
     public TextMeshProUGUI textKetInteract;
+    public SpritesButtonChema textChange;
 
     private bool isColliderPlayer = false;
     private bool isInteractive = true;
 
+
+    private void Awake()
+    {
+        base.Awake();
+        playerUI = GameObject.Find("UIPlayer");
+        textKetInteract = GetComponentInChildren<TextMeshProUGUI>();
+        spriteSecondary = GetComponentsInChildren<SpriteRenderer>()[1];
+        spritePrimary = GetComponent<SpriteRenderer>();
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     new void Update()
     {
-        bool usingGamepad = FindFirstObjectByType<Input>().usingGamepad;
+        bool usingGamepad = FindFirstObjectByType<InputDetector>().GetUsingGamepad();
 
         if (isColliderPlayer && isInteractive)
         {
-            if (usingGamepad)
-            {
-                SetTextInteractive("Y");
-            }
-            else if (!usingGamepad)
-            {
-                SetTextInteractive("E");
-            }
+            textKetInteract.text = textChange.ReplacePlaceholders("{INTERACT}", usingGamepad);
+            textKetInteract.spriteAsset = textChange.selectAsset;
+        }
+        else
+        {
+            SetTextInteractive("");
         }
 
         base.Update();
@@ -36,6 +44,9 @@ public class ObjectRecolect : ControllerText
         {
             if (!dialogueStart)
             {
+                isInteractive = false;
+                spriteSecondary.enabled = false;
+                spritePrimary.enabled = false;
                 Player player = FindFirstObjectByType<Player>();
                 player.moving = false;
                 player.Stop();
@@ -90,6 +101,7 @@ public class ObjectRecolect : ControllerText
             continueStep = true;
             Player player = FindFirstObjectByType<Player>();
             player.moving = true;
+            player.AddSedd(1);
             Destroy(gameObject);
         }
     }

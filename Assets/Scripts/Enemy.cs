@@ -1,4 +1,6 @@
+using DG.Tweening;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 public class Enemy : BasicActor
 {
@@ -6,10 +8,18 @@ public class Enemy : BasicActor
     private Material materialOrigin;
     public ObjectRecolect objectGuard = null;
     public TextPoints prefabPoints;
+    public Player player;
+    public EnemyInfo enemyInfo;
+    protected bool attack = false;
 
+    protected AudioSource audio;
     protected Rigidbody2D rgb2D;
     protected Animator animationEnemy;
+    protected float lastStep;
     private Coroutine watchCorutina = null;
+    public ExplosionObject explosionPrefab;
+    public bool explosionFirst = false;
+    private bool explosionPast = false;
 
     protected int directionWatch = 0;
     public int life;
@@ -29,13 +39,21 @@ public class Enemy : BasicActor
         base.Awake();
         entity.AddAction("watch", WatchOnly);
         entity.UpdateAction("stop", Stop);
+        entity.UpdateAction("moveLeft", MoveLeft);
+        entity.UpdateAction("moveRight", MoveRigth);
+        entity.UpdateAction("attack", Attack);
         spriteRenderer = GetComponent<SpriteRenderer>();
         materialOrigin = spriteRenderer.material;
         scaleX = Mathf.Abs(transform.localScale.x);
+
+        life = enemyInfo.life;
+        speed = enemyInfo.speed;
     }
 
     protected virtual void Start()
     {
+        player = FindFirstObjectByType<Player>();
+        audio = GetComponent<AudioSource>();
         rgb2D = GetComponent<Rigidbody2D>();
         animationEnemy = GetComponent<Animator>();
         xInitial = objectGuard == null ? transform.position.x : objectGuard.transform.position.x;
@@ -66,13 +84,94 @@ public class Enemy : BasicActor
         instance.GetComponent<RectTransform>().anchoredPosition = uiPos;
     }
 
+    public void Attack()
+    {
+        attack = true;
+        animationEnemy.SetBool("Attack", attack);
+        audio.PlayOneShot(enemyInfo.GetSound(EnemySoundType.Attack));
+    }
+
     public void Dead()
     {
         CreateText();
         if (objectGuard != null) objectGuard.EnableInteractive(true);
-        StopAllCoroutines();
-        Destroy(gameObject);
+        freeMove = true;
+        Stop();
+        rgb2D.bodyType = RigidbodyType2D.Static;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        AnimatoDead();
     }
+
+    public void AnimatoDead()
+    {
+        if (explosionFirst)
+        {
+            CreateExplosions();
+            explosionPast = true;
+        }
+        // Animación de fade con DOTween
+        animationEnemy.SetBool("Dead", true);
+        // Cuando termine el fade, instanciamos explosiones
+    }
+
+    public void CreateExplosions()
+    {
+        if (!explosionPast)
+        {
+            explosionPast = true;
+            spriteRenderer.DOFade(0.5f, 0);
+            // Posición exactamente encima del enemigo
+            Vector3 spawnPos = transform.position;
+
+            // Instancia una explosión justo encima
+            Instantiate(explosionPrefab, spawnPos, Quaternion.identity);
+
+            // Varias explosiones muy cerca del enemigo
+            for (int i = 0; i < 3; i++)
+            {
+                Vector3 offset = new Vector3(Random.Range(-0.2f, 0.2f), Random.Range(-0.2f, 0.2f), 0);
+                Instantiate(explosionPrefab, spawnPos + offset, Quaternion.identity);
+            }
+            audio.PlayOneShot(enemyInfo.GetSound(EnemySoundType.Death));
+        }
+
+        if (!explosionFirst)
+        {
+            Destroy(gameObject, 1);
+        }
+        explosionFirst = false;
+    }
+
+
+    private void MoveRigth()
+    {
+        float speed = 1.0f * 1.5f;
+        rgb2D.linearVelocityX = speed;
+        float valorScale = Mathf.Abs(transform.localScale.x);
+        transform.localScale = new Vector3(valorScale, transform.localScale.y, transform.localScale.z);
+        animationEnemy.SetFloat("Speed", Mathf.Abs(speed));
+        PlaySoundStep(speed);
+    }
+
+    private void MoveLeft()
+    {
+        float speed = 1.0f * -1.5f;
+        rgb2D.linearVelocityX = speed;
+        float valorScale = Mathf.Abs(transform.localScale.x);
+        transform.localScale = new Vector3(-valorScale, transform.localScale.y, transform.localScale.z);
+        animationEnemy.SetFloat("Speed", Mathf.Abs(speed));
+        PlaySoundStep(speed);
+    }
+
+    private void PlaySoundStep(float speed)
+    {
+        if (speed != 0 && Time.time > lastStep + 0.45f)
+        {
+            lastStep = Time.time;
+            audio.PlayOneShot(enemyInfo.GetSound(EnemySoundType.Step));
+        }
+    }
+
 
     protected void Watch()
     {
@@ -111,6 +210,8 @@ public class Enemy : BasicActor
                 }
                 break;
         }
+
+        PlaySoundStep(speed);
 
         transform.localScale = new Vector3(scaleX * Mathf.Sign(speed), transform.localScale.y, transform.localScale.z);
     }
@@ -151,7 +252,13 @@ public class Enemy : BasicActor
             Watch();
             rgb2D.linearVelocityX = speed;
             animationEnemy.SetFloat("Speed", Mathf.Abs(speed));
-            yield return new WaitForSeconds(0.01f);
+            float time = 0;
+            float timeEnd = 0.01f;
+            while (time < timeEnd)
+            {
+                time += Time.deltaTime;
+                yield return null;
+            }
         }
     }
 
@@ -170,9 +277,20 @@ public class Enemy : BasicActor
         for (int i = 0; i < 2; i++)
         {
             spriteRenderer.material = materialWhite;
-            yield return new WaitForSeconds(0.1f);
+            float time = 0;
+            float timeEnd = 0.1f;
+            while (time < timeEnd)
+            {
+                time += Time.deltaTime;
+                yield return null;
+            }
+            time = 0;
             spriteRenderer.material = materialOrigin;
-            yield return new WaitForSeconds(0.1f);
+            while (time < timeEnd)
+            {
+                time += Time.deltaTime;
+                yield return null;
+            }
         }
     }
 }

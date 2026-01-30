@@ -1,0 +1,654 @@
+fileFormatVersion: 2
+guid: 514186ab9758f7d47bba6fc944eead85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1530760584244699287
+    second: Enemigo debil 2 Muriendo_0
+  - first:
+      213: -5402681282248012594
+    second: Enemigo debil 2 Muriendo_1
+  - first:
+      213: -3805624703700696856
+    second: Enemigo debil 2 Muriendo_2
+  - first:
+      213: -4664158491158243609
+    second: Enemigo debil 2 Muriendo_3
+  - first:
+      213: -2292353315881062428
+    second: Enemigo debil 2 Muriendo_4
+  - first:
+      213: 8390386314703137723
+    second: Enemigo debil 2 Muriendo_5
+  - first:
+      213: -3198867026936650136
+    second: Enemigo debil 2 Muriendo_6
+  - first:
+      213: -7757891138220507888
+    second: Enemigo debil 2 Muriendo_7
+  - first:
+      213: -2477928833361300100
+    second: Enemigo debil 2 Muriendo_8
+  - first:
+      213: -201795358342679217
+    second: Enemigo debil 2 Muriendo_9
+  - first:
+      213: -341782690656610150
+    second: Enemigo debil 2 Muriendo_10
+  - first:
+      213: 6125962193923056483
+    second: Enemigo debil 2 Muriendo_11
+  - first:
+      213: 7282480192902420558
+    second: Enemigo debil 2 Muriendo_12
+  - first:
+      213: 4135625353462347105
+    second: Enemigo debil 2 Muriendo_13
+  - first:
+      213: -3930907337170625369
+    second: Enemigo debil 2 Muriendo_14
+  - first:
+      213: -4825650910623632643
+    second: Enemigo debil 2 Muriendo_15
+  - first:
+      213: -5326865694949418392
+    second: Enemigo debil 2 Muriendo_16
+  - first:
+      213: 8462470302049835057
+    second: Enemigo debil 2 Muriendo_17
+  - first:
+      213: -1132820616520686371
+    second: Enemigo debil 2 Muriendo_18
+  - first:
+      213: -7179355183496031707
+    second: Enemigo debil 2 Muriendo_19
+  - first:
+      213: -6152586625239139708
+    second: Enemigo debil 2 Muriendo_20
+  - first:
+      213: -2477267741389566572
+    second: Enemigo debil 2 Muriendo_21
+  - first:
+      213: -3201975372381025277
+    second: Enemigo debil 2 Muriendo_22
+  - first:
+      213: -3718031503158929922
+    second: Enemigo debil 2 Muriendo_23
+  - first:
+      213: 1048205242049805168
+    second: Enemigo debil 2 Muriendo_24
+  - first:
+      213: -5832406256104636877
+    second: Enemigo debil 2 Muriendo_25
+  - first:
+      213: -2198815294542696402
+    second: Enemigo debil 2 Muriendo_26
+  - first:
+      213: -2846514350485786308
+    second: Enemigo debil 2 Muriendo_27
+  - first:
+      213: 7607831276811988685
+    second: Enemigo debil 2 Muriendo_28
+  - first:
+      213: 7262530934327224521
+    second: Enemigo debil 2 Muriendo_29
+  - first:
+      213: -2336608167791298990
+    second: Enemigo debil 2 Muriendo_30
+  - first:
+      213: 1979980115428789001
+    second: Enemigo debil 2 Muriendo_31
+  - first:
+      213: 13539718669745854
+    second: Enemigo debil 2 Muriendo_32
+  - first:
+      213: -3005264012736249051
+    second: Enemigo debil 2 Muriendo_33
+  - first:
+      213: 4442216639432252345
+    second: Enemigo debil 2 Muriendo_34
+  - first:
+      213: 8429818178863827095
+    second: Enemigo debil 2 Muriendo_35
+  - first:
+      213: -4939743800096074384
+    second: Enemigo debil 2 Muriendo_36
+  - first:
+      213: -3233008051895287827
+    second: Enemigo debil 2 Muriendo_37
+  - first:
+      213: 5856117998760600852
+    second: Enemigo debil 2 Muriendo_38
+  - first:
+      213: 6705876853167365105
+    second: Enemigo debil 2 Muriendo_39
+  - first:
+      213: 8276357513119210068
+    second: Enemigo debil 2 Muriendo_40
+  - first:
+      213: -3019422568399284545
+    second: Enemigo debil 2 Muriendo_41
+  - first:
+      213: 8087396584556735140
+    second: Enemigo debil 2 Muriendo_42
+  - first:
+      213: -8095571161588873838
+    second: Enemigo debil 2 Muriendo_43
+  - first:
+      213: 3147556937892395354
+    second: Enemigo debil 2 Muriendo_44
+  - first:
+      213: -4468326705544379125
+    second: Enemigo debil 2 Muriendo_45
+  - first:
+      213: -238039040320722410
+    second: Enemigo debil 2 Muriendo_46
+  - first:
+      213: 3042742228786269735
+    second: Enemigo debil 2 Muriendo_47
+  - first:
+      213: 3119051671136903910
+    second: Enemigo debil 2 Muriendo_48
+  - first:
+      213: 1952126982134058447
+    second: Enemigo debil 2 Muriendo_49
+  - first:
+      213: -87672095254702730
+    second: Enemigo debil 2 Muriendo_50
+  - first:
+      213: 4143304284096679184
+    second: Enemigo debil 2 Muriendo_51
+  - first:
+      213: -2861729581982928049
+    second: Enemigo debil 2 Muriendo_52
+  - first:
+      213: 8934732599413357264
+    second: Enemigo debil 2 Muriendo_53
+  - first:
+      213: 2462354924803734999
+    second: Enemigo debil 2 Muriendo_54
+  - first:
+      213: -7463308558095957433
+    second: Enemigo debil 2 Muriendo_55
+  - first:
+      213: -4547064082685634005
+    second: Enemigo debil 2 Muriendo_56
+  - first:
+      213: 7853969893847288786
+    second: Enemigo debil 2 Muriendo_57
+  - first:
+      213: 1362143218816253423
+    second: Enemigo debil 2 Muriendo_58
+  - first:
+      213: -665815543929593646
+    second: Enemigo debil 2 Muriendo_59
+  - first:
+      213: -7084033936318040366
+    second: Enemigo debil 2 Muriendo_60
+  - first:
+      213: 4526487235708239674
+    second: Enemigo debil 2 Muriendo_61
+  - first:
+      213: -5876758810921831122
+    second: Enemigo debil 2 Muriendo_62
+  - first:
+      213: -3488520227269871857
+    second: Enemigo debil 2 Muriendo_63
+  - first:
+      213: -6151696275101164572
+    second: Enemigo debil 2 Muriendo_64
+  - first:
+      213: -4282402346244455494
+    second: Enemigo debil 2 Muriendo_65
+  - first:
+      213: -3118289705776786758
+    second: Enemigo debil 2 Muriendo_66
+  - first:
+      213: 5780447209904513848
+    second: Enemigo debil 2 Muriendo_67
+  - first:
+      213: 5097056943223006868
+    second: Enemigo debil 2 Muriendo_68
+  - first:
+      213: 9138817301534575545
+    second: Enemigo debil 2 Muriendo_69
+  - first:
+      213: 5529516844528262737
+    second: Enemigo debil 2 Muriendo_70
+  - first:
+      213: 4223240840436075343
+    second: Enemigo debil 2 Muriendo_71
+  - first:
+      213: 3838147943336706773
+    second: Enemigo debil 2 Muriendo_72
+  - first:
+      213: -7424254314307205164
+    second: Enemigo debil 2 Muriendo_73
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 12
+        width: 60
+        height: 45
+      alignment: 9
+      pivot: {x: 0.479, y: 0.445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fdce3eb55a1cae0800000000000000
+      internalID: -1530760584244699287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 12
+        width: 60
+        height: 45
+      alignment: 9
+      pivot: {x: 0.46, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc84f89ff1d505b0800000000000000
+      internalID: -5402681282248012594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 12
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.45, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0087bbe74bf2bc0800000000000000
+      internalID: -3805624703700696856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_4
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 11
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.48, y: 0.29}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef683bfdccef20e0800000000000000
+      internalID: -2292353315881062428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 11
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.44, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbed2826e3a07470800000000000000
+      internalID: 8390386314703137723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_6
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 6
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.4, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8662bb723675b93d0800000000000000
+      internalID: -3198867026936650136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_7
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 8
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d3734ec1f665490800000000000000
+      internalID: -7757891138220507888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_8
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 0
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c753dcccad0ac9dd0800000000000000
+      internalID: -2477928833361300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_9
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a981905247eb14bf0800000000000000
+      internalID: -341782690656610150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_10
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 0
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363a14c982ac30550800000000000000
+      internalID: 6125962193923056483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_11
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 0
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4854c5b621901560800000000000000
+      internalID: 7282480192902420558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_12
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 0
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acd7fa8a9c9279c0800000000000000
+      internalID: -3930907337170625369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo debil 2 Muriendo_13
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 0
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2fc3e6018d70db0800000000000000
+      internalID: -4825650910623632643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0a6f15fa13774f14c9c71de230a950c5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":60.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Enemigo debil 2 Muriendo_0: -1530760584244699287
+      Enemigo debil 2 Muriendo_1: -5402681282248012594
+      Enemigo debil 2 Muriendo_10: 6125962193923056483
+      Enemigo debil 2 Muriendo_11: 7282480192902420558
+      Enemigo debil 2 Muriendo_12: -3930907337170625369
+      Enemigo debil 2 Muriendo_13: -4825650910623632643
+      Enemigo debil 2 Muriendo_2: -3805624703700696856
+      Enemigo debil 2 Muriendo_3: -4664158491158243609
+      Enemigo debil 2 Muriendo_4: -2292353315881062428
+      Enemigo debil 2 Muriendo_5: 8390386314703137723
+      Enemigo debil 2 Muriendo_6: -3198867026936650136
+      Enemigo debil 2 Muriendo_7: -7757891138220507888
+      Enemigo debil 2 Muriendo_8: -2477928833361300100
+      Enemigo debil 2 Muriendo_9: -341782690656610150
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

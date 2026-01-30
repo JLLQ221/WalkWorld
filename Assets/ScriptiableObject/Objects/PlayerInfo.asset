@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f463c7d31f12224aa991f7f9ff7ce78, type: 3}
+  m_Name: PlayerInfo
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInfo
+  life: 12
+  sounds:
+  - clip: {fileID: 8300000, guid: 93c67f79e7c05a04f8a1602f95674a6e, type: 3}
+    type: 0
+  attackSounds:
+  - {fileID: 8300000, guid: 1c1ca87adee14634c8e13c2a801f68ec, type: 3}
+  - {fileID: 8300000, guid: d3edb573b4aa0ce44a9a128efa0723c3, type: 3}
+  - {fileID: 8300000, guid: a1c10154d506ae8428b502c99cb3601a, type: 3}
+  hurtSounds: []
+  deathSounds: []
+  stepsSounds:
+  - {fileID: 8300000, guid: 10af187a58e829848800c46464877c37, type: 3}
+  - {fileID: 8300000, guid: f8abce03206b0f940b19e173691567e6, type: 3}
